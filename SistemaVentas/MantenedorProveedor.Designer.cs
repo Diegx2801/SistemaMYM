@@ -30,56 +30,62 @@
         {
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
             this.btnInicio = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lblTelefono = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dtPickerRegCliente = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaRegistro = new System.Windows.Forms.DateTimePicker();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblFechaRegistro = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtidCiudad = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtidTipoCliente = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtRazonSocial = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.lblRazonSocial = new System.Windows.Forms.Label();
+            this.txtRuc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtidCliente = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cbkEstadoCliente = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtRazonSocial = new System.Windows.Forms.TextBox();
+            this.lblTipoProveedor = new System.Windows.Forms.Label();
+            this.cbkEstadoProveedor = new System.Windows.Forms.CheckBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
+            this.colRuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmbTipoProveedor = new System.Windows.Forms.ComboBox();
             this.grupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // grupBoxDatos
             // 
+            this.grupBoxDatos.Controls.Add(this.cmbTipoProveedor);
             this.grupBoxDatos.Controls.Add(this.btnInicio);
-            this.grupBoxDatos.Controls.Add(this.textBox2);
-            this.grupBoxDatos.Controls.Add(this.textBox1);
-            this.grupBoxDatos.Controls.Add(this.label7);
+            this.grupBoxDatos.Controls.Add(this.txtDireccion);
+            this.grupBoxDatos.Controls.Add(this.lblTelefono);
             this.grupBoxDatos.Controls.Add(this.label8);
             this.grupBoxDatos.Controls.Add(this.btnAgregar);
-            this.grupBoxDatos.Controls.Add(this.dtPickerRegCliente);
+            this.grupBoxDatos.Controls.Add(this.dtpFechaRegistro);
             this.grupBoxDatos.Controls.Add(this.btnModificar);
-            this.grupBoxDatos.Controls.Add(this.label6);
+            this.grupBoxDatos.Controls.Add(this.lblFechaRegistro);
             this.grupBoxDatos.Controls.Add(this.btnCancelar);
-            this.grupBoxDatos.Controls.Add(this.txtidCiudad);
+            this.grupBoxDatos.Controls.Add(this.txtCorreo);
             this.grupBoxDatos.Controls.Add(this.label1);
-            this.grupBoxDatos.Controls.Add(this.txtidTipoCliente);
-            this.grupBoxDatos.Controls.Add(this.label2);
-            this.grupBoxDatos.Controls.Add(this.txtRazonSocial);
+            this.grupBoxDatos.Controls.Add(this.txtTelefono);
+            this.grupBoxDatos.Controls.Add(this.lblRazonSocial);
+            this.grupBoxDatos.Controls.Add(this.txtRuc);
             this.grupBoxDatos.Controls.Add(this.label3);
-            this.grupBoxDatos.Controls.Add(this.txtidCliente);
-            this.grupBoxDatos.Controls.Add(this.label4);
-            this.grupBoxDatos.Controls.Add(this.cbkEstadoCliente);
-            this.grupBoxDatos.Controls.Add(this.label5);
+            this.grupBoxDatos.Controls.Add(this.txtRazonSocial);
+            this.grupBoxDatos.Controls.Add(this.lblTipoProveedor);
+            this.grupBoxDatos.Controls.Add(this.cbkEstadoProveedor);
+            this.grupBoxDatos.Controls.Add(this.lblCorreo);
             this.grupBoxDatos.Location = new System.Drawing.Point(11, 245);
             this.grupBoxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.grupBoxDatos.Name = "grupBoxDatos";
@@ -98,31 +104,23 @@
             this.btnInicio.UseVisualStyleBackColor = true;
             this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
-            // textBox2
+            // txtDireccion
             // 
-            this.textBox2.Location = new System.Drawing.Point(99, 231);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(268, 22);
-            this.textBox2.TabIndex = 30;
+            this.txtDireccion.Location = new System.Drawing.Point(99, 231);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(268, 22);
+            this.txtDireccion.TabIndex = 30;
             // 
-            // textBox1
+            // lblTelefono
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 267);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 22);
-            this.textBox1.TabIndex = 29;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 160);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 16);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Telefono";
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(21, 160);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefono.TabIndex = 27;
+            this.lblTelefono.Text = "Telefono";
             // 
             // label8
             // 
@@ -144,13 +142,13 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // dtPickerRegCliente
+            // dtpFechaRegistro
             // 
-            this.dtPickerRegCliente.Location = new System.Drawing.Point(433, 190);
-            this.dtPickerRegCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.dtPickerRegCliente.Name = "dtPickerRegCliente";
-            this.dtPickerRegCliente.Size = new System.Drawing.Size(265, 22);
-            this.dtPickerRegCliente.TabIndex = 19;
+            this.dtpFechaRegistro.Location = new System.Drawing.Point(433, 190);
+            this.dtpFechaRegistro.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpFechaRegistro.Name = "dtpFechaRegistro";
+            this.dtpFechaRegistro.Size = new System.Drawing.Size(265, 22);
+            this.dtpFechaRegistro.TabIndex = 19;
             // 
             // btnModificar
             // 
@@ -162,15 +160,15 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // lblFechaRegistro
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(429, 166);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 16);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Fecha de Registro";
+            this.lblFechaRegistro.AutoSize = true;
+            this.lblFechaRegistro.Location = new System.Drawing.Point(429, 166);
+            this.lblFechaRegistro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFechaRegistro.Name = "lblFechaRegistro";
+            this.lblFechaRegistro.Size = new System.Drawing.Size(118, 16);
+            this.lblFechaRegistro.TabIndex = 18;
+            this.lblFechaRegistro.Text = "Fecha de Registro";
             // 
             // btnCancelar
             // 
@@ -182,13 +180,13 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // txtidCiudad
+            // txtCorreo
             // 
-            this.txtidCiudad.Location = new System.Drawing.Point(80, 194);
-            this.txtidCiudad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtidCiudad.Name = "txtidCiudad";
-            this.txtidCiudad.Size = new System.Drawing.Size(243, 22);
-            this.txtidCiudad.TabIndex = 17;
+            this.txtCorreo.Location = new System.Drawing.Point(80, 194);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(243, 22);
+            this.txtCorreo.TabIndex = 17;
             // 
             // label1
             // 
@@ -200,31 +198,31 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Datos del Proveedor";
             // 
-            // txtidTipoCliente
+            // txtTelefono
             // 
-            this.txtidTipoCliente.Location = new System.Drawing.Point(95, 159);
-            this.txtidTipoCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtidTipoCliente.Name = "txtidTipoCliente";
-            this.txtidTipoCliente.Size = new System.Drawing.Size(188, 22);
-            this.txtidTipoCliente.TabIndex = 16;
+            this.txtTelefono.Location = new System.Drawing.Point(95, 159);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(188, 22);
+            this.txtTelefono.TabIndex = 16;
             // 
-            // label2
+            // lblRazonSocial
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 87);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Razón social";
+            this.lblRazonSocial.AutoSize = true;
+            this.lblRazonSocial.Location = new System.Drawing.Point(21, 87);
+            this.lblRazonSocial.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRazonSocial.Name = "lblRazonSocial";
+            this.lblRazonSocial.Size = new System.Drawing.Size(85, 16);
+            this.lblRazonSocial.TabIndex = 9;
+            this.lblRazonSocial.Text = "Razón social";
             // 
-            // txtRazonSocial
+            // txtRuc
             // 
-            this.txtRazonSocial.Location = new System.Drawing.Point(65, 123);
-            this.txtRazonSocial.Margin = new System.Windows.Forms.Padding(4);
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(301, 22);
-            this.txtRazonSocial.TabIndex = 15;
+            this.txtRuc.Location = new System.Drawing.Point(65, 123);
+            this.txtRuc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRuc.Name = "txtRuc";
+            this.txtRuc.Size = new System.Drawing.Size(301, 22);
+            this.txtRuc.TabIndex = 15;
             // 
             // label3
             // 
@@ -236,44 +234,44 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Ruc";
             // 
-            // txtidCliente
+            // txtRazonSocial
             // 
-            this.txtidCliente.Location = new System.Drawing.Point(120, 87);
-            this.txtidCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.txtidCliente.Name = "txtidCliente";
-            this.txtidCliente.Size = new System.Drawing.Size(132, 22);
-            this.txtidCliente.TabIndex = 14;
+            this.txtRazonSocial.Location = new System.Drawing.Point(120, 87);
+            this.txtRazonSocial.Margin = new System.Windows.Forms.Padding(4);
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Size = new System.Drawing.Size(132, 22);
+            this.txtRazonSocial.TabIndex = 14;
             // 
-            // label4
+            // lblTipoProveedor
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 271);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Tipo de proveedor";
+            this.lblTipoProveedor.AutoSize = true;
+            this.lblTipoProveedor.Location = new System.Drawing.Point(21, 271);
+            this.lblTipoProveedor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTipoProveedor.Name = "lblTipoProveedor";
+            this.lblTipoProveedor.Size = new System.Drawing.Size(120, 16);
+            this.lblTipoProveedor.TabIndex = 11;
+            this.lblTipoProveedor.Text = "Tipo de proveedor";
             // 
-            // cbkEstadoCliente
+            // cbkEstadoProveedor
             // 
-            this.cbkEstadoCliente.AutoSize = true;
-            this.cbkEstadoCliente.Location = new System.Drawing.Point(433, 82);
-            this.cbkEstadoCliente.Margin = new System.Windows.Forms.Padding(4);
-            this.cbkEstadoCliente.Name = "cbkEstadoCliente";
-            this.cbkEstadoCliente.Size = new System.Drawing.Size(157, 20);
-            this.cbkEstadoCliente.TabIndex = 13;
-            this.cbkEstadoCliente.Text = "Estado de proveedor";
-            this.cbkEstadoCliente.UseVisualStyleBackColor = true;
+            this.cbkEstadoProveedor.AutoSize = true;
+            this.cbkEstadoProveedor.Location = new System.Drawing.Point(433, 82);
+            this.cbkEstadoProveedor.Margin = new System.Windows.Forms.Padding(4);
+            this.cbkEstadoProveedor.Name = "cbkEstadoProveedor";
+            this.cbkEstadoProveedor.Size = new System.Drawing.Size(157, 20);
+            this.cbkEstadoProveedor.TabIndex = 13;
+            this.cbkEstadoProveedor.Text = "Estado de proveedor";
+            this.cbkEstadoProveedor.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lblCorreo
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 194);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Correo";
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(21, 194);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(48, 16);
+            this.lblCorreo.TabIndex = 12;
+            this.lblCorreo.Text = "Correo";
             // 
             // btnDeshabilitar
             // 
@@ -318,12 +316,69 @@
             // dgvCliente
             // 
             this.dgvCliente.ColumnHeadersHeight = 29;
+            this.dgvCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colRuc,
+            this.colRazonSocial,
+            this.colTelefono,
+            this.colDireccion,
+            this.colEmail,
+            this.colEstado});
             this.dgvCliente.Location = new System.Drawing.Point(36, 13);
             this.dgvCliente.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.RowHeadersWidth = 51;
-            this.dgvCliente.Size = new System.Drawing.Size(795, 185);
+            this.dgvCliente.Size = new System.Drawing.Size(806, 185);
             this.dgvCliente.TabIndex = 27;
+            // 
+            // colRuc
+            // 
+            this.colRuc.HeaderText = "RUC";
+            this.colRuc.MinimumWidth = 6;
+            this.colRuc.Name = "colRuc";
+            this.colRuc.Width = 125;
+            // 
+            // colRazonSocial
+            // 
+            this.colRazonSocial.HeaderText = "Razón social";
+            this.colRazonSocial.MinimumWidth = 6;
+            this.colRazonSocial.Name = "colRazonSocial";
+            this.colRazonSocial.Width = 125;
+            // 
+            // colTelefono
+            // 
+            this.colTelefono.HeaderText = "Teléfono";
+            this.colTelefono.MinimumWidth = 6;
+            this.colTelefono.Name = "colTelefono";
+            this.colTelefono.Width = 125;
+            // 
+            // colDireccion
+            // 
+            this.colDireccion.HeaderText = "Direccion";
+            this.colDireccion.MinimumWidth = 6;
+            this.colDireccion.Name = "colDireccion";
+            this.colDireccion.Width = 125;
+            // 
+            // colEmail
+            // 
+            this.colEmail.HeaderText = "Email";
+            this.colEmail.MinimumWidth = 6;
+            this.colEmail.Name = "colEmail";
+            this.colEmail.Width = 125;
+            // 
+            // colEstado
+            // 
+            this.colEstado.HeaderText = "Estado";
+            this.colEstado.MinimumWidth = 6;
+            this.colEstado.Name = "colEstado";
+            this.colEstado.Width = 125;
+            // 
+            // cmbTipoProveedor
+            // 
+            this.cmbTipoProveedor.FormattingEnabled = true;
+            this.cmbTipoProveedor.Location = new System.Drawing.Point(176, 268);
+            this.cmbTipoProveedor.Name = "cmbTipoProveedor";
+            this.cmbTipoProveedor.Size = new System.Drawing.Size(121, 24);
+            this.cmbTipoProveedor.TabIndex = 31;
             // 
             // MantenedorProveedor
             // 
@@ -349,29 +404,35 @@
 
         private System.Windows.Forms.GroupBox grupBoxDatos;
         private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DateTimePicker dtPickerRegCliente;
+        private System.Windows.Forms.DateTimePicker dtpFechaRegistro;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblFechaRegistro;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox txtidCiudad;
+        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtidTipoCliente;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtRazonSocial;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.Label lblRazonSocial;
+        private System.Windows.Forms.TextBox txtRuc;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtidCliente;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox cbkEstadoCliente;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtRazonSocial;
+        private System.Windows.Forms.Label lblTipoProveedor;
+        private System.Windows.Forms.CheckBox cbkEstadoProveedor;
+        private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.DataGridView dgvCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRazonSocial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTelefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDireccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
+        private System.Windows.Forms.ComboBox cmbTipoProveedor;
     }
 }

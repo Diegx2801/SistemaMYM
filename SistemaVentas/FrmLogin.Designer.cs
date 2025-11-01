@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
-            this.linkPass = new System.Windows.Forms.LinkLabel();
+            this.lnkOlvido = new System.Windows.Forms.LinkLabel();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,18 +44,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // linkPass
+            // lnkOlvido
             // 
-            this.linkPass.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.linkPass.AutoSize = true;
-            this.linkPass.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkPass.LinkColor = System.Drawing.Color.Transparent;
-            this.linkPass.Location = new System.Drawing.Point(469, 404);
-            this.linkPass.Name = "linkPass";
-            this.linkPass.Size = new System.Drawing.Size(195, 17);
-            this.linkPass.TabIndex = 10;
-            this.linkPass.TabStop = true;
-            this.linkPass.Text = "Has olvidado la contraseña?";
+            this.lnkOlvido.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lnkOlvido.AutoSize = true;
+            this.lnkOlvido.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkOlvido.LinkColor = System.Drawing.Color.Transparent;
+            this.lnkOlvido.Location = new System.Drawing.Point(469, 404);
+            this.lnkOlvido.Name = "lnkOlvido";
+            this.lnkOlvido.Size = new System.Drawing.Size(195, 17);
+            this.lnkOlvido.TabIndex = 10;
+            this.lnkOlvido.TabStop = true;
+            this.lnkOlvido.Text = "Has olvidado la contraseña?";
             // 
             // txtPassword
             // 
@@ -95,7 +95,7 @@
             // 
             this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(847, 23);
+            this.btnSalir.Location = new System.Drawing.Point(847, 425);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(91, 30);
             this.btnSalir.TabIndex = 18;
@@ -181,7 +181,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlText;
             this.ClientSize = new System.Drawing.Size(950, 467);
-            this.Controls.Add(this.linkPass);
+            this.Controls.Add(this.lnkOlvido);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSalir);
@@ -204,7 +204,7 @@
 
         #endregion
 
-        private System.Windows.Forms.LinkLabel linkPass;
+        private System.Windows.Forms.LinkLabel lnkOlvido;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;

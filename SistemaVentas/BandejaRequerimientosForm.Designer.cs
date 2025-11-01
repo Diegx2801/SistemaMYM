@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlAcciones = new System.Windows.Forms.Panel();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
@@ -47,30 +47,38 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
-            this.colNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colObra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFechaRequerida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSolicitante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1.SuspendLayout();
+            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAnular = new System.Windows.Forms.Button();
+            this.statusBar = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.pnlAcciones.SuspendLayout();
             this.grpFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
+            this.statusBar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlAcciones
             // 
-            this.panel1.Controls.Add(this.btnInicio);
-            this.panel1.Controls.Add(this.btnNuevo);
-            this.panel1.Controls.Add(this.btnCerrar);
-            this.panel1.Controls.Add(this.btnEnviarCompras);
-            this.panel1.Controls.Add(this.btnImprimir);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(870, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(173, 606);
-            this.panel1.TabIndex = 22;
+            this.pnlAcciones.Controls.Add(this.btnAnular);
+            this.pnlAcciones.Controls.Add(this.btnEditar);
+            this.pnlAcciones.Controls.Add(this.btnInicio);
+            this.pnlAcciones.Controls.Add(this.btnNuevo);
+            this.pnlAcciones.Controls.Add(this.btnCerrar);
+            this.pnlAcciones.Controls.Add(this.btnEnviarCompras);
+            this.pnlAcciones.Controls.Add(this.btnImprimir);
+            this.pnlAcciones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlAcciones.Location = new System.Drawing.Point(870, 0);
+            this.pnlAcciones.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlAcciones.Name = "pnlAcciones";
+            this.pnlAcciones.Size = new System.Drawing.Size(173, 606);
+            this.pnlAcciones.TabIndex = 22;
             // 
             // btnInicio
             // 
@@ -84,7 +92,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(40, 42);
+            this.btnNuevo.Location = new System.Drawing.Point(40, 46);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(121, 44);
@@ -95,7 +103,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(40, 255);
+            this.btnCerrar.Location = new System.Drawing.Point(40, 369);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(121, 47);
@@ -105,17 +113,17 @@
             // 
             // btnEnviarCompras
             // 
-            this.btnEnviarCompras.Location = new System.Drawing.Point(40, 113);
+            this.btnEnviarCompras.Location = new System.Drawing.Point(40, 240);
             this.btnEnviarCompras.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEnviarCompras.Name = "btnEnviarCompras";
             this.btnEnviarCompras.Size = new System.Drawing.Size(121, 42);
             this.btnEnviarCompras.TabIndex = 13;
-            this.btnEnviarCompras.Text = "EnviarCompras";
+            this.btnEnviarCompras.Text = "Enviar a Compras";
             this.btnEnviarCompras.UseVisualStyleBackColor = true;
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(40, 181);
+            this.btnImprimir.Location = new System.Drawing.Point(40, 173);
             this.btnImprimir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnImprimir.Name = "btnImprimir";
             this.btnImprimir.Size = new System.Drawing.Size(121, 48);
@@ -252,12 +260,13 @@
             this.dgvRequerimientos.AllowUserToDeleteRows = false;
             this.dgvRequerimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRequerimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNumero,
+            this.colNum,
             this.colObra,
-            this.colFecha,
+            this.colFechaRequerida,
             this.colSolicitante,
             this.colEstado,
-            this.colItems});
+            this.colItems,
+            this.colTotal});
             this.dgvRequerimientos.Location = new System.Drawing.Point(18, 154);
             this.dgvRequerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvRequerimientos.Name = "dgvRequerimientos";
@@ -266,12 +275,12 @@
             this.dgvRequerimientos.Size = new System.Drawing.Size(765, 215);
             this.dgvRequerimientos.TabIndex = 20;
             // 
-            // colNumero
+            // colNum
             // 
-            this.colNumero.HeaderText = "N° Req";
-            this.colNumero.MinimumWidth = 6;
-            this.colNumero.Name = "colNumero";
-            this.colNumero.Width = 80;
+            this.colNum.HeaderText = "N° Req";
+            this.colNum.MinimumWidth = 6;
+            this.colNum.Name = "colNum";
+            this.colNum.Width = 80;
             // 
             // colObra
             // 
@@ -280,12 +289,12 @@
             this.colObra.Name = "colObra";
             this.colObra.Width = 160;
             // 
-            // colFecha
+            // colFechaRequerida
             // 
-            this.colFecha.HeaderText = "Fecha Requerida";
-            this.colFecha.MinimumWidth = 6;
-            this.colFecha.Name = "colFecha";
-            this.colFecha.Width = 135;
+            this.colFechaRequerida.HeaderText = "Fecha Requerida";
+            this.colFechaRequerida.MinimumWidth = 6;
+            this.colFechaRequerida.Name = "colFechaRequerida";
+            this.colFechaRequerida.Width = 135;
             // 
             // colSolicitante
             // 
@@ -308,27 +317,75 @@
             this.colItems.Name = "colItems";
             this.colItems.Width = 60;
             // 
+            // colTotal
+            // 
+            this.colTotal.HeaderText = "Total";
+            this.colTotal.MinimumWidth = 6;
+            this.colTotal.Name = "colTotal";
+            this.colTotal.Width = 125;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(40, 108);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(121, 44);
+            this.btnEditar.TabIndex = 17;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnAnular
+            // 
+            this.btnAnular.Location = new System.Drawing.Point(40, 297);
+            this.btnAnular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(121, 48);
+            this.btnAnular.TabIndex = 18;
+            this.btnAnular.Text = "Anular";
+            this.btnAnular.UseVisualStyleBackColor = true;
+            // 
+            // statusBar
+            // 
+            this.statusBar.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusBar.Location = new System.Drawing.Point(0, 580);
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Size = new System.Drawing.Size(870, 26);
+            this.statusBar.TabIndex = 23;
+            this.statusBar.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(120, 20);
+            this.toolStripStatusLabel1.Text = "lblTotalRegistros";
+            // 
             // BandejaRequerimientosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 606);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.statusBar);
+            this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.grpFiltros);
             this.Controls.Add(this.dgvRequerimientos);
             this.Name = "BandejaRequerimientosForm";
             this.Text = "BandejaRequerimientosForm";
-            this.panel1.ResumeLayout(false);
+            this.pnlAcciones.ResumeLayout(false);
             this.grpFiltros.ResumeLayout(false);
             this.grpFiltros.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).EndInit();
+            this.statusBar.ResumeLayout(false);
+            this.statusBar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlAcciones;
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCerrar;
@@ -347,11 +404,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvRequerimientos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNumero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn colObra;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFechaRequerida;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSolicitante;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
         private System.Windows.Forms.DataGridViewTextBoxColumn colItems;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTotal;
+        private System.Windows.Forms.Button btnAnular;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.StatusStrip statusBar;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
