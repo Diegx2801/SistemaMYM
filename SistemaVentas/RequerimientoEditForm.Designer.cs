@@ -38,20 +38,17 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaRequerida = new System.Windows.Forms.DateTimePicker();
             this.grpDatos = new System.Windows.Forms.GroupBox();
-            this.lblObra = new System.Windows.Forms.Label();
-            this.cmbObra = new System.Windows.Forms.ComboBox();
-            this.lblSolicitante = new System.Windows.Forms.Label();
-            this.Prioridad = new System.Windows.Forms.Label();
-            this.lblObservacion = new System.Windows.Forms.Label();
-            this.txtSolicitante = new System.Windows.Forms.TextBox();
-            this.cmbPrioridad = new System.Windows.Forms.ComboBox();
             this.txtObservacion = new System.Windows.Forms.TextBox();
+            this.cmbPrioridad = new System.Windows.Forms.ComboBox();
+            this.txtSolicitante = new System.Windows.Forms.TextBox();
+            this.lblObservacion = new System.Windows.Forms.Label();
+            this.Prioridad = new System.Windows.Forms.Label();
+            this.lblSolicitante = new System.Windows.Forms.Label();
+            this.cmbObra = new System.Windows.Forms.ComboBox();
+            this.lblObra = new System.Windows.Forms.Label();
             this.grpItems = new System.Windows.Forms.GroupBox();
-            this.lblBuscarMaterial = new System.Windows.Forms.Label();
-            this.txtBuscarMaterial = new System.Windows.Forms.TextBox();
-            this.btnBuscarMaterial = new System.Windows.Forms.Button();
-            this.btnQuitarItem = new System.Windows.Forms.Button();
-            this.btnAgregarItem = new System.Windows.Forms.Button();
+            this.txtTotalItems = new System.Windows.Forms.TextBox();
+            this.lblTotalItems = new System.Windows.Forms.Label();
             this.dgvItems = new System.Windows.Forms.DataGridView();
             this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,18 +56,21 @@
             this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblTotalItems = new System.Windows.Forms.Label();
-            this.txtTotalItems = new System.Windows.Forms.TextBox();
+            this.btnAgregarItem = new System.Windows.Forms.Button();
+            this.btnQuitarItem = new System.Windows.Forms.Button();
+            this.btnBuscarMaterial = new System.Windows.Forms.Button();
+            this.txtBuscarMaterial = new System.Windows.Forms.TextBox();
+            this.lblBuscarMaterial = new System.Windows.Forms.Label();
             this.pnlAcciones = new System.Windows.Forms.Panel();
+            this.btnCierra = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
+            this.btnAnula = new System.Windows.Forms.Button();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnAnula = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.btnCierra = new System.Windows.Forms.Button();
             this.grpDatos.SuspendLayout();
             this.grpItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
@@ -80,9 +80,10 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(494, 9);
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(376, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(203, 16);
+            this.lblTitulo.Size = new System.Drawing.Size(366, 31);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "REQUERIMIENTO DE COMPRA";
             // 
@@ -167,57 +168,14 @@
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos";
             // 
-            // lblObra
+            // txtObservacion
             // 
-            this.lblObra.AutoSize = true;
-            this.lblObra.Location = new System.Drawing.Point(36, 34);
-            this.lblObra.Name = "lblObra";
-            this.lblObra.Size = new System.Drawing.Size(37, 16);
-            this.lblObra.TabIndex = 0;
-            this.lblObra.Text = "Obra";
-            // 
-            // cmbObra
-            // 
-            this.cmbObra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbObra.FormattingEnabled = true;
-            this.cmbObra.Location = new System.Drawing.Point(131, 34);
-            this.cmbObra.Name = "cmbObra";
-            this.cmbObra.Size = new System.Drawing.Size(121, 24);
-            this.cmbObra.TabIndex = 1;
-            // 
-            // lblSolicitante
-            // 
-            this.lblSolicitante.AutoSize = true;
-            this.lblSolicitante.Location = new System.Drawing.Point(39, 90);
-            this.lblSolicitante.Name = "lblSolicitante";
-            this.lblSolicitante.Size = new System.Drawing.Size(69, 16);
-            this.lblSolicitante.TabIndex = 2;
-            this.lblSolicitante.Text = "Solicitante";
-            // 
-            // Prioridad
-            // 
-            this.Prioridad.AutoSize = true;
-            this.Prioridad.Location = new System.Drawing.Point(39, 142);
-            this.Prioridad.Name = "Prioridad";
-            this.Prioridad.Size = new System.Drawing.Size(62, 16);
-            this.Prioridad.TabIndex = 3;
-            this.Prioridad.Text = "Prioridad";
-            // 
-            // lblObservacion
-            // 
-            this.lblObservacion.AutoSize = true;
-            this.lblObservacion.Location = new System.Drawing.Point(39, 199);
-            this.lblObservacion.Name = "lblObservacion";
-            this.lblObservacion.Size = new System.Drawing.Size(84, 16);
-            this.lblObservacion.TabIndex = 4;
-            this.lblObservacion.Text = "Observacion";
-            // 
-            // txtSolicitante
-            // 
-            this.txtSolicitante.Location = new System.Drawing.Point(131, 90);
-            this.txtSolicitante.Name = "txtSolicitante";
-            this.txtSolicitante.Size = new System.Drawing.Size(100, 22);
-            this.txtSolicitante.TabIndex = 5;
+            this.txtObservacion.Location = new System.Drawing.Point(131, 191);
+            this.txtObservacion.Multiline = true;
+            this.txtObservacion.Name = "txtObservacion";
+            this.txtObservacion.Size = new System.Drawing.Size(153, 22);
+            this.txtObservacion.TabIndex = 7;
+            this.txtObservacion.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // cmbPrioridad
             // 
@@ -231,14 +189,57 @@
             this.cmbPrioridad.Size = new System.Drawing.Size(121, 24);
             this.cmbPrioridad.TabIndex = 6;
             // 
-            // txtObservacion
+            // txtSolicitante
             // 
-            this.txtObservacion.Location = new System.Drawing.Point(131, 191);
-            this.txtObservacion.Multiline = true;
-            this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(153, 22);
-            this.txtObservacion.TabIndex = 7;
-            this.txtObservacion.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtSolicitante.Location = new System.Drawing.Point(131, 90);
+            this.txtSolicitante.Name = "txtSolicitante";
+            this.txtSolicitante.Size = new System.Drawing.Size(100, 22);
+            this.txtSolicitante.TabIndex = 5;
+            // 
+            // lblObservacion
+            // 
+            this.lblObservacion.AutoSize = true;
+            this.lblObservacion.Location = new System.Drawing.Point(39, 199);
+            this.lblObservacion.Name = "lblObservacion";
+            this.lblObservacion.Size = new System.Drawing.Size(84, 16);
+            this.lblObservacion.TabIndex = 4;
+            this.lblObservacion.Text = "Observacion";
+            // 
+            // Prioridad
+            // 
+            this.Prioridad.AutoSize = true;
+            this.Prioridad.Location = new System.Drawing.Point(39, 142);
+            this.Prioridad.Name = "Prioridad";
+            this.Prioridad.Size = new System.Drawing.Size(62, 16);
+            this.Prioridad.TabIndex = 3;
+            this.Prioridad.Text = "Prioridad";
+            // 
+            // lblSolicitante
+            // 
+            this.lblSolicitante.AutoSize = true;
+            this.lblSolicitante.Location = new System.Drawing.Point(39, 90);
+            this.lblSolicitante.Name = "lblSolicitante";
+            this.lblSolicitante.Size = new System.Drawing.Size(69, 16);
+            this.lblSolicitante.TabIndex = 2;
+            this.lblSolicitante.Text = "Solicitante";
+            // 
+            // cmbObra
+            // 
+            this.cmbObra.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbObra.FormattingEnabled = true;
+            this.cmbObra.Location = new System.Drawing.Point(131, 34);
+            this.cmbObra.Name = "cmbObra";
+            this.cmbObra.Size = new System.Drawing.Size(121, 24);
+            this.cmbObra.TabIndex = 1;
+            // 
+            // lblObra
+            // 
+            this.lblObra.AutoSize = true;
+            this.lblObra.Location = new System.Drawing.Point(36, 34);
+            this.lblObra.Name = "lblObra";
+            this.lblObra.Size = new System.Drawing.Size(37, 16);
+            this.lblObra.TabIndex = 0;
+            this.lblObra.Text = "Obra";
             // 
             // grpItems
             // 
@@ -257,48 +258,21 @@
             this.grpItems.TabStop = false;
             this.grpItems.Text = "Items";
             // 
-            // lblBuscarMaterial
+            // txtTotalItems
             // 
-            this.lblBuscarMaterial.AutoSize = true;
-            this.lblBuscarMaterial.Location = new System.Drawing.Point(16, 22);
-            this.lblBuscarMaterial.Name = "lblBuscarMaterial";
-            this.lblBuscarMaterial.Size = new System.Drawing.Size(100, 16);
-            this.lblBuscarMaterial.TabIndex = 0;
-            this.lblBuscarMaterial.Text = "Buscar Material";
+            this.txtTotalItems.Location = new System.Drawing.Point(134, 316);
+            this.txtTotalItems.Name = "txtTotalItems";
+            this.txtTotalItems.Size = new System.Drawing.Size(100, 22);
+            this.txtTotalItems.TabIndex = 7;
             // 
-            // txtBuscarMaterial
+            // lblTotalItems
             // 
-            this.txtBuscarMaterial.Location = new System.Drawing.Point(147, 21);
-            this.txtBuscarMaterial.Name = "txtBuscarMaterial";
-            this.txtBuscarMaterial.Size = new System.Drawing.Size(132, 22);
-            this.txtBuscarMaterial.TabIndex = 1;
-            // 
-            // btnBuscarMaterial
-            // 
-            this.btnBuscarMaterial.Location = new System.Drawing.Point(23, 72);
-            this.btnBuscarMaterial.Name = "btnBuscarMaterial";
-            this.btnBuscarMaterial.Size = new System.Drawing.Size(75, 34);
-            this.btnBuscarMaterial.TabIndex = 2;
-            this.btnBuscarMaterial.Text = "Buscar";
-            this.btnBuscarMaterial.UseVisualStyleBackColor = true;
-            // 
-            // btnQuitarItem
-            // 
-            this.btnQuitarItem.Location = new System.Drawing.Point(235, 72);
-            this.btnQuitarItem.Name = "btnQuitarItem";
-            this.btnQuitarItem.Size = new System.Drawing.Size(78, 34);
-            this.btnQuitarItem.TabIndex = 3;
-            this.btnQuitarItem.Text = "Quitar";
-            this.btnQuitarItem.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarItem
-            // 
-            this.btnAgregarItem.Location = new System.Drawing.Point(119, 72);
-            this.btnAgregarItem.Name = "btnAgregarItem";
-            this.btnAgregarItem.Size = new System.Drawing.Size(78, 34);
-            this.btnAgregarItem.TabIndex = 4;
-            this.btnAgregarItem.Text = "Agregar";
-            this.btnAgregarItem.UseVisualStyleBackColor = true;
+            this.lblTotalItems.AutoSize = true;
+            this.lblTotalItems.Location = new System.Drawing.Point(49, 319);
+            this.lblTotalItems.Name = "lblTotalItems";
+            this.lblTotalItems.Size = new System.Drawing.Size(79, 16);
+            this.lblTotalItems.TabIndex = 6;
+            this.lblTotalItems.Text = "Total Items :";
             // 
             // dgvItems
             // 
@@ -359,21 +333,48 @@
             this.colObservacion.Name = "colObservacion";
             this.colObservacion.Width = 125;
             // 
-            // lblTotalItems
+            // btnAgregarItem
             // 
-            this.lblTotalItems.AutoSize = true;
-            this.lblTotalItems.Location = new System.Drawing.Point(49, 319);
-            this.lblTotalItems.Name = "lblTotalItems";
-            this.lblTotalItems.Size = new System.Drawing.Size(79, 16);
-            this.lblTotalItems.TabIndex = 6;
-            this.lblTotalItems.Text = "Total Items :";
+            this.btnAgregarItem.Location = new System.Drawing.Point(119, 72);
+            this.btnAgregarItem.Name = "btnAgregarItem";
+            this.btnAgregarItem.Size = new System.Drawing.Size(78, 34);
+            this.btnAgregarItem.TabIndex = 4;
+            this.btnAgregarItem.Text = "Agregar";
+            this.btnAgregarItem.UseVisualStyleBackColor = true;
             // 
-            // txtTotalItems
+            // btnQuitarItem
             // 
-            this.txtTotalItems.Location = new System.Drawing.Point(134, 316);
-            this.txtTotalItems.Name = "txtTotalItems";
-            this.txtTotalItems.Size = new System.Drawing.Size(100, 22);
-            this.txtTotalItems.TabIndex = 7;
+            this.btnQuitarItem.Location = new System.Drawing.Point(235, 72);
+            this.btnQuitarItem.Name = "btnQuitarItem";
+            this.btnQuitarItem.Size = new System.Drawing.Size(78, 34);
+            this.btnQuitarItem.TabIndex = 3;
+            this.btnQuitarItem.Text = "Quitar";
+            this.btnQuitarItem.UseVisualStyleBackColor = true;
+            // 
+            // btnBuscarMaterial
+            // 
+            this.btnBuscarMaterial.Location = new System.Drawing.Point(23, 72);
+            this.btnBuscarMaterial.Name = "btnBuscarMaterial";
+            this.btnBuscarMaterial.Size = new System.Drawing.Size(75, 34);
+            this.btnBuscarMaterial.TabIndex = 2;
+            this.btnBuscarMaterial.Text = "Buscar";
+            this.btnBuscarMaterial.UseVisualStyleBackColor = true;
+            // 
+            // txtBuscarMaterial
+            // 
+            this.txtBuscarMaterial.Location = new System.Drawing.Point(147, 21);
+            this.txtBuscarMaterial.Name = "txtBuscarMaterial";
+            this.txtBuscarMaterial.Size = new System.Drawing.Size(132, 22);
+            this.txtBuscarMaterial.TabIndex = 1;
+            // 
+            // lblBuscarMaterial
+            // 
+            this.lblBuscarMaterial.AutoSize = true;
+            this.lblBuscarMaterial.Location = new System.Drawing.Point(16, 22);
+            this.lblBuscarMaterial.Name = "lblBuscarMaterial";
+            this.lblBuscarMaterial.Size = new System.Drawing.Size(100, 16);
+            this.lblBuscarMaterial.TabIndex = 0;
+            this.lblBuscarMaterial.Text = "Buscar Material";
             // 
             // pnlAcciones
             // 
@@ -392,6 +393,36 @@
             this.pnlAcciones.Size = new System.Drawing.Size(517, 93);
             this.pnlAcciones.TabIndex = 23;
             // 
+            // btnCierra
+            // 
+            this.btnCierra.Location = new System.Drawing.Point(420, 32);
+            this.btnCierra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCierra.Name = "btnCierra";
+            this.btnCierra.Size = new System.Drawing.Size(75, 44);
+            this.btnCierra.TabIndex = 22;
+            this.btnCierra.Text = "Cerrar";
+            this.btnCierra.UseVisualStyleBackColor = true;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Location = new System.Drawing.Point(339, 32);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(75, 44);
+            this.btnImprimir.TabIndex = 22;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(96, 32);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 44);
+            this.btnGuardar.TabIndex = 21;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
             // btnAnular
             // 
             this.btnAnular.Location = new System.Drawing.Point(40, 297);
@@ -401,6 +432,16 @@
             this.btnAnular.TabIndex = 18;
             this.btnAnular.Text = "Anular";
             this.btnAnular.UseVisualStyleBackColor = true;
+            // 
+            // btnAnula
+            // 
+            this.btnAnula.Location = new System.Drawing.Point(258, 32);
+            this.btnAnula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAnula.Name = "btnAnula";
+            this.btnAnula.Size = new System.Drawing.Size(75, 44);
+            this.btnAnula.TabIndex = 17;
+            this.btnAnula.Text = "Anular";
+            this.btnAnula.UseVisualStyleBackColor = true;
             // 
             // btnEnviar
             // 
@@ -440,46 +481,6 @@
             this.btnCerrar.TabIndex = 15;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Location = new System.Drawing.Point(96, 32);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 44);
-            this.btnGuardar.TabIndex = 21;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // btnAnula
-            // 
-            this.btnAnula.Location = new System.Drawing.Point(258, 32);
-            this.btnAnula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAnula.Name = "btnAnula";
-            this.btnAnula.Size = new System.Drawing.Size(75, 44);
-            this.btnAnula.TabIndex = 17;
-            this.btnAnula.Text = "Anular";
-            this.btnAnula.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Location = new System.Drawing.Point(339, 32);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(75, 44);
-            this.btnImprimir.TabIndex = 22;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            // 
-            // btnCierra
-            // 
-            this.btnCierra.Location = new System.Drawing.Point(420, 32);
-            this.btnCierra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCierra.Name = "btnCierra";
-            this.btnCierra.Size = new System.Drawing.Size(75, 44);
-            this.btnCierra.TabIndex = 22;
-            this.btnCierra.Text = "Cerrar";
-            this.btnCierra.UseVisualStyleBackColor = true;
             // 
             // RequerimientoEditForm
             // 

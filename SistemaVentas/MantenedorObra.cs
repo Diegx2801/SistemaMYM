@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaVentas
 {
-    public partial class ObraForm : Form
+    public partial class MantenedorObra : Form
     {
-        public ObraForm()
+        public MantenedorObra()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace SistemaVentas
 {
-    partial class ObraForm
+    partial class MantenedorObra
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.grpListado = new System.Windows.Forms.GroupBox();
-            this.lblBuscarObra = new System.Windows.Forms.Label();
-            this.txtBuscarObra = new System.Windows.Forms.TextBox();
-            this.btnBuscarObra = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnBuscarObra = new System.Windows.Forms.Button();
+            this.txtBuscarObra = new System.Windows.Forms.TextBox();
+            this.lblBuscarObra = new System.Windows.Forms.Label();
             this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btnDeshabilitar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.grpListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -61,35 +61,6 @@
             this.grpListado.TabIndex = 0;
             this.grpListado.TabStop = false;
             this.grpListado.Text = "Listado";
-            // 
-            // lblBuscarObra
-            // 
-            this.lblBuscarObra.AutoSize = true;
-            this.lblBuscarObra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscarObra.Location = new System.Drawing.Point(29, 47);
-            this.lblBuscarObra.Name = "lblBuscarObra";
-            this.lblBuscarObra.Size = new System.Drawing.Size(117, 23);
-            this.lblBuscarObra.TabIndex = 0;
-            this.lblBuscarObra.Text = "Buscar Obra :";
-            this.lblBuscarObra.Click += new System.EventHandler(this.lblBuscarObra_Click);
-            // 
-            // txtBuscarObra
-            // 
-            this.txtBuscarObra.Location = new System.Drawing.Point(174, 47);
-            this.txtBuscarObra.Multiline = true;
-            this.txtBuscarObra.Name = "txtBuscarObra";
-            this.txtBuscarObra.Size = new System.Drawing.Size(229, 29);
-            this.txtBuscarObra.TabIndex = 1;
-            // 
-            // btnBuscarObra
-            // 
-            this.btnBuscarObra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarObra.Location = new System.Drawing.Point(555, 37);
-            this.btnBuscarObra.Name = "btnBuscarObra";
-            this.btnBuscarObra.Size = new System.Drawing.Size(95, 40);
-            this.btnBuscarObra.TabIndex = 2;
-            this.btnBuscarObra.Text = "Buscar";
-            this.btnBuscarObra.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -134,6 +105,35 @@
             this.colEstado.Name = "colEstado";
             this.colEstado.Width = 125;
             // 
+            // btnBuscarObra
+            // 
+            this.btnBuscarObra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarObra.Location = new System.Drawing.Point(555, 37);
+            this.btnBuscarObra.Name = "btnBuscarObra";
+            this.btnBuscarObra.Size = new System.Drawing.Size(95, 40);
+            this.btnBuscarObra.TabIndex = 2;
+            this.btnBuscarObra.Text = "Buscar";
+            this.btnBuscarObra.UseVisualStyleBackColor = true;
+            // 
+            // txtBuscarObra
+            // 
+            this.txtBuscarObra.Location = new System.Drawing.Point(174, 47);
+            this.txtBuscarObra.Multiline = true;
+            this.txtBuscarObra.Name = "txtBuscarObra";
+            this.txtBuscarObra.Size = new System.Drawing.Size(229, 29);
+            this.txtBuscarObra.TabIndex = 1;
+            // 
+            // lblBuscarObra
+            // 
+            this.lblBuscarObra.AutoSize = true;
+            this.lblBuscarObra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscarObra.Location = new System.Drawing.Point(29, 47);
+            this.lblBuscarObra.Name = "lblBuscarObra";
+            this.lblBuscarObra.Size = new System.Drawing.Size(117, 23);
+            this.lblBuscarObra.TabIndex = 0;
+            this.lblBuscarObra.Text = "Buscar Obra :";
+            this.lblBuscarObra.Click += new System.EventHandler(this.lblBuscarObra_Click);
+            // 
             // pnlAcciones
             // 
             this.pnlAcciones.Controls.Add(this.btnSalir);
@@ -147,45 +147,15 @@
             this.pnlAcciones.Size = new System.Drawing.Size(233, 399);
             this.pnlAcciones.TabIndex = 1;
             // 
-            // btnNuevo
+            // btnSalir
             // 
-            this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(56, 20);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(135, 42);
-            this.btnNuevo.TabIndex = 0;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(57, 89);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(135, 42);
-            this.btnGuardar.TabIndex = 1;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(57, 156);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(135, 42);
-            this.btnEditar.TabIndex = 2;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(57, 221);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(135, 42);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(56, 341);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(135, 42);
+            this.btnSalir.TabIndex = 5;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // btnDeshabilitar
             // 
@@ -197,25 +167,55 @@
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.UseVisualStyleBackColor = true;
             // 
-            // btnSalir
+            // btnCancelar
             // 
-            this.btnSalir.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(56, 341);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(135, 42);
-            this.btnSalir.TabIndex = 5;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(57, 221);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(135, 42);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // ObraForm
+            // btnEditar
+            // 
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(57, 156);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(135, 42);
+            this.btnEditar.TabIndex = 2;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(57, 89);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(135, 42);
+            this.btnGuardar.TabIndex = 1;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(56, 20);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(135, 42);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // MantenedorObra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 593);
+            this.ClientSize = new System.Drawing.Size(941, 431);
             this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.grpListado);
-            this.Name = "ObraForm";
-            this.Text = "ObraForm";
+            this.Name = "MantenedorObra";
+            this.Text = "Mantenedor Obra";
             this.grpListado.ResumeLayout(false);
             this.grpListado.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
