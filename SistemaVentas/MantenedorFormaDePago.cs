@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace SistemaVentas
 {
-    public partial class MantenedorProveedor : Form
+    public partial class MantenedorFormaDePago : Form
     {
-        public MantenedorProveedor()
+        public MantenedorFormaDePago()
         {
             InitializeComponent();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            BandejaRequerimientosForm frm = new BandejaRequerimientosForm();
-            frm.Show();
-            this.Hide();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

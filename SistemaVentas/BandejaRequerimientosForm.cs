@@ -35,5 +35,19 @@ namespace SistemaVentas
         {
 
         }
+
+        private void btnProv_Click(object sender, EventArgs e)
+        {
+            MantenedorProveedor frm = new MantenedorProveedor();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnFormaPago_Click(object sender, EventArgs e)
+        {
+            MantenedorFormaDePago frm = new MantenedorFormaDePago();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
