@@ -52,6 +52,12 @@
     <Compile Include="BandejaOrdenIngreso.Designer.cs">
       <DependentUpon>BandejaOrdenIngreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="BandejaOrdenSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BandejaOrdenSalida.Designer.cs">
+      <DependentUpon>BandejaOrdenSalida.cs</DependentUpon>
+    </Compile>
     <Compile Include="BandejaPedidoCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,12 @@
     <Compile Include="OrdenIngreso.Designer.cs">
       <DependentUpon>OrdenIngreso.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdenSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenSalida.Designer.cs">
+      <DependentUpon>OrdenSalida.cs</DependentUpon>
+    </Compile>
     <Compile Include="PedidoCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +153,9 @@
     <Compile Include="Sesion.cs" />
     <EmbeddedResource Include="BandejaOrdenIngreso.resx">
       <DependentUpon>BandejaOrdenIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BandejaOrdenSalida.resx">
+      <DependentUpon>BandejaOrdenSalida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BandejaPedidoCompra.resx">
       <DependentUpon>BandejaPedidoCompra.cs</DependentUpon>
@@ -174,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrdenIngreso.resx">
       <DependentUpon>OrdenIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenSalida.resx">
+      <DependentUpon>OrdenSalida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PedidoCompra.resx">
       <DependentUpon>PedidoCompra.cs</DependentUpon>
