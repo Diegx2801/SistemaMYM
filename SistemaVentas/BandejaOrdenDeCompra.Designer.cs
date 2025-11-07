@@ -1,6 +1,6 @@
 ﻿namespace SistemaVentas
 {
-    partial class BandejaRequerimientosForm
+    partial class OrdenIngresoForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pnlAcciones = new System.Windows.Forms.Panel();
-            this.btnFormaPago = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnProv = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
-            this.statusBar = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.btnEnviarCompras = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.grpFiltros = new System.Windows.Forms.GroupBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -48,135 +47,109 @@
             this.dtpHasta = new System.Windows.Forms.DateTimePicker();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
             this.colNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colObra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSolicitante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrioridad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlAcciones.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
-            this.statusBar.SuspendLayout();
             this.grpFiltros.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlAcciones
+            // label1
             // 
-            this.pnlAcciones.Controls.Add(this.btnFormaPago);
-            this.pnlAcciones.Controls.Add(this.btnProv);
-            this.pnlAcciones.Controls.Add(this.btnAnular);
-            this.pnlAcciones.Controls.Add(this.btnInicio);
-            this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Controls.Add(this.btnCerrar);
-            this.pnlAcciones.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlAcciones.Location = new System.Drawing.Point(856, 0);
-            this.pnlAcciones.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(130, 551);
-            this.pnlAcciones.TabIndex = 22;
-            // 
-            // btnFormaPago
-            // 
-            this.btnFormaPago.Location = new System.Drawing.Point(18, 251);
-            this.btnFormaPago.Margin = new System.Windows.Forms.Padding(2);
-            this.btnFormaPago.Name = "btnFormaPago";
-            this.btnFormaPago.Size = new System.Drawing.Size(91, 25);
-            this.btnFormaPago.TabIndex = 24;
-            this.btnFormaPago.Text = "Formas de pago";
-            this.btnFormaPago.UseVisualStyleBackColor = true;
-            this.btnFormaPago.Click += new System.EventHandler(this.btnFormaPago_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(392, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(209, 26);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "ORDEN DE INGRESO";
             // 
             // btnProv
             // 
-            this.btnProv.Location = new System.Drawing.Point(18, 212);
+            this.btnProv.Location = new System.Drawing.Point(913, 424);
             this.btnProv.Margin = new System.Windows.Forms.Padding(2);
             this.btnProv.Name = "btnProv";
             this.btnProv.Size = new System.Drawing.Size(91, 25);
-            this.btnProv.TabIndex = 19;
-            this.btnProv.Text = "Proveedores";
+            this.btnProv.TabIndex = 42;
+            this.btnProv.Text = "Agregar Obra";
             this.btnProv.UseVisualStyleBackColor = true;
-            this.btnProv.Click += new System.EventHandler(this.btnProv_Click);
             // 
             // btnAnular
             // 
-            this.btnAnular.Location = new System.Drawing.Point(18, 93);
+            this.btnAnular.Location = new System.Drawing.Point(913, 302);
             this.btnAnular.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnular.Name = "btnAnular";
             this.btnAnular.Size = new System.Drawing.Size(91, 39);
-            this.btnAnular.TabIndex = 18;
+            this.btnAnular.TabIndex = 41;
             this.btnAnular.Text = "Anular";
             this.btnAnular.UseVisualStyleBackColor = true;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(913, 125);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(91, 36);
+            this.btnEditar.TabIndex = 40;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
             // btnInicio
             // 
-            this.btnInicio.Location = new System.Drawing.Point(39, 487);
+            this.btnInicio.Location = new System.Drawing.Point(934, 547);
             this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(56, 19);
-            this.btnInicio.TabIndex = 16;
+            this.btnInicio.TabIndex = 39;
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = true;
-            this.btnInicio.Click += new System.EventHandler(this.btnInicio_Click);
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(18, 38);
+            this.btnNuevo.Location = new System.Drawing.Point(913, 61);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(91, 36);
-            this.btnNuevo.TabIndex = 11;
-            this.btnNuevo.Text = "Atender";
+            this.btnNuevo.TabIndex = 35;
+            this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(18, 156);
+            this.btnCerrar.Location = new System.Drawing.Point(913, 365);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(91, 38);
-            this.btnCerrar.TabIndex = 15;
+            this.btnCerrar.TabIndex = 38;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // dgvRequerimientos
+            // btnEnviarCompras
             // 
-            this.dgvRequerimientos.AllowUserToDeleteRows = false;
-            this.dgvRequerimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRequerimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNum,
-            this.colObra,
-            this.colFecha,
-            this.colSolicitante,
-            this.colPrioridad,
-            this.colItems});
-            this.dgvRequerimientos.Location = new System.Drawing.Point(26, 126);
-            this.dgvRequerimientos.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvRequerimientos.Name = "dgvRequerimientos";
-            this.dgvRequerimientos.RowHeadersWidth = 51;
-            this.dgvRequerimientos.RowTemplate.Height = 24;
-            this.dgvRequerimientos.Size = new System.Drawing.Size(763, 380);
-            this.dgvRequerimientos.TabIndex = 20;
+            this.btnEnviarCompras.Location = new System.Drawing.Point(913, 245);
+            this.btnEnviarCompras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEnviarCompras.Name = "btnEnviarCompras";
+            this.btnEnviarCompras.Size = new System.Drawing.Size(91, 34);
+            this.btnEnviarCompras.TabIndex = 36;
+            this.btnEnviarCompras.Text = "Enviar a Compras";
+            this.btnEnviarCompras.UseVisualStyleBackColor = true;
             // 
-            // statusBar
+            // btnImprimir
             // 
-            this.statusBar.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusBar.Location = new System.Drawing.Point(0, 529);
-            this.statusBar.Name = "statusBar";
-            this.statusBar.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusBar.Size = new System.Drawing.Size(856, 22);
-            this.statusBar.TabIndex = 23;
-            this.statusBar.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(99, 17);
-            this.toolStripStatusLabel1.Text = "Total de Registros";
+            this.btnImprimir.Location = new System.Drawing.Point(913, 186);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(91, 39);
+            this.btnImprimir.TabIndex = 37;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
             // 
             // grpFiltros
             // 
@@ -189,14 +162,14 @@
             this.grpFiltros.Controls.Add(this.dtpHasta);
             this.grpFiltros.Controls.Add(this.btnBuscar);
             this.grpFiltros.Controls.Add(this.label2);
-            this.grpFiltros.Controls.Add(this.label1);
             this.grpFiltros.Controls.Add(this.label3);
-            this.grpFiltros.Location = new System.Drawing.Point(9, 23);
+            this.grpFiltros.Controls.Add(this.label4);
+            this.grpFiltros.Location = new System.Drawing.Point(11, 50);
             this.grpFiltros.Margin = new System.Windows.Forms.Padding(2);
             this.grpFiltros.Name = "grpFiltros";
             this.grpFiltros.Padding = new System.Windows.Forms.Padding(2);
-            this.grpFiltros.Size = new System.Drawing.Size(836, 88);
-            this.grpFiltros.TabIndex = 24;
+            this.grpFiltros.Size = new System.Drawing.Size(885, 88);
+            this.grpFiltros.TabIndex = 34;
             this.grpFiltros.TabStop = false;
             this.grpFiltros.Text = "Filtros de búsqueda";
             // 
@@ -232,9 +205,9 @@
             this.lblEstado.Location = new System.Drawing.Point(311, 24);
             this.lblEstado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(51, 13);
+            this.lblEstado.Size = new System.Drawing.Size(46, 13);
             this.lblEstado.TabIndex = 17;
-            this.lblEstado.Text = "Prioridad:";
+            this.lblEstado.Text = "Estado :";
             // 
             // txtBuscar
             // 
@@ -282,25 +255,44 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Hasta";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(464, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Desde";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 24);
+            this.label3.Location = new System.Drawing.Point(464, 27);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Buscar por N° Req";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Desde";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 24);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Buscar por N° Req";
+            // 
+            // dgvRequerimientos
+            // 
+            this.dgvRequerimientos.AllowUserToDeleteRows = false;
+            this.dgvRequerimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRequerimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNum,
+            this.colObra,
+            this.colFecha,
+            this.colSolicitante,
+            this.colEstado,
+            this.colItems});
+            this.dgvRequerimientos.Location = new System.Drawing.Point(11, 165);
+            this.dgvRequerimientos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvRequerimientos.Name = "dgvRequerimientos";
+            this.dgvRequerimientos.RowHeadersWidth = 51;
+            this.dgvRequerimientos.RowTemplate.Height = 24;
+            this.dgvRequerimientos.Size = new System.Drawing.Size(885, 401);
+            this.dgvRequerimientos.TabIndex = 33;
             // 
             // colNum
             // 
@@ -330,12 +322,12 @@
             this.colSolicitante.Name = "colSolicitante";
             this.colSolicitante.Width = 150;
             // 
-            // colPrioridad
+            // colEstado
             // 
-            this.colPrioridad.HeaderText = "Prioridad";
-            this.colPrioridad.MinimumWidth = 6;
-            this.colPrioridad.Name = "colPrioridad";
-            this.colPrioridad.Width = 125;
+            this.colEstado.HeaderText = "Estado";
+            this.colEstado.MinimumWidth = 6;
+            this.colEstado.Name = "colEstado";
+            this.colEstado.Width = 125;
             // 
             // colItems
             // 
@@ -344,41 +336,43 @@
             this.colItems.Name = "colItems";
             this.colItems.Width = 60;
             // 
-            // BandejaRequerimientosForm
+            // OrdenIngresoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(986, 551);
+            this.ClientSize = new System.Drawing.Size(1015, 605);
+            this.Controls.Add(this.btnProv);
+            this.Controls.Add(this.btnAnular);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnInicio);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.btnEnviarCompras);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.grpFiltros);
-            this.Controls.Add(this.statusBar);
-            this.Controls.Add(this.pnlAcciones);
             this.Controls.Add(this.dgvRequerimientos);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "BandejaRequerimientosForm";
-            this.Text = "Bandeja de Requerimientos de Compra";
-            this.pnlAcciones.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).EndInit();
-            this.statusBar.ResumeLayout(false);
-            this.statusBar.PerformLayout();
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "OrdenIngresoForm";
+            this.Text = "OrdenIngresoForm";
             this.grpFiltros.ResumeLayout(false);
             this.grpFiltros.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnlAcciones;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnProv;
+        private System.Windows.Forms.Button btnAnular;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.DataGridView dgvRequerimientos;
-        private System.Windows.Forms.Button btnAnular;
-        private System.Windows.Forms.StatusStrip statusBar;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.Button btnFormaPago;
-        private System.Windows.Forms.Button btnProv;
+        private System.Windows.Forms.Button btnEnviarCompras;
+        private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.GroupBox grpFiltros;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -389,13 +383,14 @@
         private System.Windows.Forms.DateTimePicker dtpHasta;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgvRequerimientos;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn colObra;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSolicitante;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPrioridad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
         private System.Windows.Forms.DataGridViewTextBoxColumn colItems;
     }
 }
