@@ -53,20 +53,25 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.dgvProv = new System.Windows.Forms.DataGridView();
+            this.btnAgregarMarca = new System.Windows.Forms.Button();
+            this.btnAgregarTipoMaterial = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.idMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMedida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAgregarMarca = new System.Windows.Forms.Button();
-            this.btnAgregarTipoMaterial = new System.Windows.Forms.Button();
             this.grupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProv)).BeginInit();
             this.SuspendLayout();
             // 
             // grupBoxDatos
             // 
+            this.grupBoxDatos.Controls.Add(this.label5);
+            this.grupBoxDatos.Controls.Add(this.txtCodigo);
             this.grupBoxDatos.Controls.Add(this.textBox3);
             this.grupBoxDatos.Controls.Add(this.label4);
             this.grupBoxDatos.Controls.Add(this.textBox2);
@@ -88,7 +93,7 @@
             this.grupBoxDatos.Controls.Add(this.lblCorreo);
             this.grupBoxDatos.Location = new System.Drawing.Point(12, 303);
             this.grupBoxDatos.Name = "grupBoxDatos";
-            this.grupBoxDatos.Size = new System.Drawing.Size(1081, 287);
+            this.grupBoxDatos.Size = new System.Drawing.Size(1081, 272);
             this.grupBoxDatos.TabIndex = 38;
             this.grupBoxDatos.TabStop = false;
             // 
@@ -129,7 +134,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(109, 161);
+            this.comboBox3.Location = new System.Drawing.Point(109, 185);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(199, 21);
             this.comboBox3.TabIndex = 34;
@@ -137,7 +142,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(109, 132);
+            this.comboBox2.Location = new System.Drawing.Point(109, 156);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(199, 21);
             this.comboBox2.TabIndex = 33;
@@ -145,14 +150,14 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 100);
+            this.comboBox1.Location = new System.Drawing.Point(109, 124);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(199, 21);
             this.comboBox1.TabIndex = 32;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(109, 193);
+            this.txtDireccion.Location = new System.Drawing.Point(109, 217);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(199, 20);
             this.txtDireccion.TabIndex = 30;
@@ -160,7 +165,7 @@
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(6, 140);
+            this.lblTelefono.Location = new System.Drawing.Point(6, 164);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(40, 13);
             this.lblTelefono.TabIndex = 27;
@@ -169,7 +174,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 196);
+            this.label8.Location = new System.Drawing.Point(6, 220);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 13);
             this.label8.TabIndex = 28;
@@ -214,7 +219,7 @@
             // lblRazonSocial
             // 
             this.lblRazonSocial.AutoSize = true;
-            this.lblRazonSocial.Location = new System.Drawing.Point(6, 71);
+            this.lblRazonSocial.Location = new System.Drawing.Point(6, 95);
             this.lblRazonSocial.Name = "lblRazonSocial";
             this.lblRazonSocial.Size = new System.Drawing.Size(63, 13);
             this.lblRazonSocial.TabIndex = 9;
@@ -223,7 +228,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 103);
+            this.label3.Location = new System.Drawing.Point(6, 127);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 13);
             this.label3.TabIndex = 10;
@@ -231,7 +236,7 @@
             // 
             // txtRazonSocial
             // 
-            this.txtRazonSocial.Location = new System.Drawing.Point(109, 68);
+            this.txtRazonSocial.Location = new System.Drawing.Point(109, 92);
             this.txtRazonSocial.Name = "txtRazonSocial";
             this.txtRazonSocial.Size = new System.Drawing.Size(199, 20);
             this.txtRazonSocial.TabIndex = 14;
@@ -249,7 +254,7 @@
             // lblCorreo
             // 
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(6, 169);
+            this.lblCorreo.Location = new System.Drawing.Point(6, 193);
             this.lblCorreo.Name = "lblCorreo";
             this.lblCorreo.Size = new System.Drawing.Size(59, 13);
             this.lblCorreo.TabIndex = 12;
@@ -296,6 +301,7 @@
             this.dgvProv.ColumnHeadersHeight = 29;
             this.dgvProv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idMaterial,
+            this.Codigo,
             this.colDescripcion,
             this.colMarca,
             this.colProveedor,
@@ -307,12 +313,51 @@
             this.dgvProv.Size = new System.Drawing.Size(963, 285);
             this.dgvProv.TabIndex = 33;
             // 
+            // btnAgregarMarca
+            // 
+            this.btnAgregarMarca.Location = new System.Drawing.Point(997, 185);
+            this.btnAgregarMarca.Name = "btnAgregarMarca";
+            this.btnAgregarMarca.Size = new System.Drawing.Size(91, 43);
+            this.btnAgregarMarca.TabIndex = 39;
+            this.btnAgregarMarca.Text = "Agregar Marca";
+            this.btnAgregarMarca.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarTipoMaterial
+            // 
+            this.btnAgregarTipoMaterial.Location = new System.Drawing.Point(997, 244);
+            this.btnAgregarTipoMaterial.Name = "btnAgregarTipoMaterial";
+            this.btnAgregarTipoMaterial.Size = new System.Drawing.Size(91, 53);
+            this.btnAgregarTipoMaterial.TabIndex = 40;
+            this.btnAgregarTipoMaterial.Text = "Agregar Tipo Material";
+            this.btnAgregarTipoMaterial.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 63);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Código";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(109, 60);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(199, 20);
+            this.txtCodigo.TabIndex = 41;
+            // 
             // idMaterial
             // 
             this.idMaterial.HeaderText = "ID";
             this.idMaterial.MinimumWidth = 6;
             this.idMaterial.Name = "idMaterial";
             this.idMaterial.Width = 125;
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Código";
+            this.Codigo.Name = "Codigo";
             // 
             // colDescripcion
             // 
@@ -343,29 +388,11 @@
             this.colStock.HeaderText = "Stock";
             this.colStock.Name = "colStock";
             // 
-            // btnAgregarMarca
-            // 
-            this.btnAgregarMarca.Location = new System.Drawing.Point(997, 185);
-            this.btnAgregarMarca.Name = "btnAgregarMarca";
-            this.btnAgregarMarca.Size = new System.Drawing.Size(91, 43);
-            this.btnAgregarMarca.TabIndex = 39;
-            this.btnAgregarMarca.Text = "Agregar Marca";
-            this.btnAgregarMarca.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarTipoMaterial
-            // 
-            this.btnAgregarTipoMaterial.Location = new System.Drawing.Point(997, 244);
-            this.btnAgregarTipoMaterial.Name = "btnAgregarTipoMaterial";
-            this.btnAgregarTipoMaterial.Size = new System.Drawing.Size(91, 53);
-            this.btnAgregarTipoMaterial.TabIndex = 40;
-            this.btnAgregarTipoMaterial.Text = "Agregar Tipo Material";
-            this.btnAgregarTipoMaterial.UseVisualStyleBackColor = true;
-            // 
             // MantenedorMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 627);
+            this.ClientSize = new System.Drawing.Size(1105, 590);
             this.Controls.Add(this.btnAgregarTipoMaterial);
             this.Controls.Add(this.btnAgregarMarca);
             this.Controls.Add(this.grupBoxDatos);
@@ -411,12 +438,15 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnAgregarTipoMaterial;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn idMaterial;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDescripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMarca;
         private System.Windows.Forms.DataGridViewTextBoxColumn colProveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMedida;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStock;
-        private System.Windows.Forms.Button btnAgregarTipoMaterial;
     }
 }

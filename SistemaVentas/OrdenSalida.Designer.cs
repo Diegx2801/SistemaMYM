@@ -30,6 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dgvItems = new System.Windows.Forms.DataGridView();
+            this.idItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -41,14 +47,6 @@
             this.txtRazonSocial = new System.Windows.Forms.TextBox();
             this.lblTotalItems = new System.Windows.Forms.Label();
             this.txtTotalItems = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.idItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.grupBoxDatos.SuspendLayout();
             this.SuspendLayout();
@@ -81,126 +79,6 @@
             this.dgvItems.RowTemplate.Height = 24;
             this.dgvItems.Size = new System.Drawing.Size(633, 344);
             this.dgvItems.TabIndex = 47;
-            // 
-            // grupBoxDatos
-            // 
-            this.grupBoxDatos.Controls.Add(this.label4);
-            this.grupBoxDatos.Controls.Add(this.textBox1);
-            this.grupBoxDatos.Controls.Add(this.dateTimePicker1);
-            this.grupBoxDatos.Controls.Add(this.textBox2);
-            this.grupBoxDatos.Controls.Add(this.label2);
-            this.grupBoxDatos.Controls.Add(this.btnAgregar);
-            this.grupBoxDatos.Controls.Add(this.btnCancelar);
-            this.grupBoxDatos.Controls.Add(this.lblRazonSocial);
-            this.grupBoxDatos.Controls.Add(this.label3);
-            this.grupBoxDatos.Controls.Add(this.txtRazonSocial);
-            this.grupBoxDatos.Location = new System.Drawing.Point(71, 434);
-            this.grupBoxDatos.Name = "grupBoxDatos";
-            this.grupBoxDatos.Size = new System.Drawing.Size(633, 178);
-            this.grupBoxDatos.TabIndex = 50;
-            this.grupBoxDatos.TabStop = false;
-            this.grupBoxDatos.Text = "Datos Orden de Salida";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(121, 98);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 38;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(121, 129);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 20);
-            this.textBox2.TabIndex = 37;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 13);
-            this.label2.TabIndex = 36;
-            this.label2.Text = "Observaciones:";
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(522, 66);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
-            this.btnAgregar.TabIndex = 5;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Location = new System.Drawing.Point(522, 104);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            // 
-            // lblRazonSocial
-            // 
-            this.lblRazonSocial.AutoSize = true;
-            this.lblRazonSocial.Location = new System.Drawing.Point(6, 71);
-            this.lblRazonSocial.Name = "lblRazonSocial";
-            this.lblRazonSocial.Size = new System.Drawing.Size(103, 13);
-            this.lblRazonSocial.TabIndex = 9;
-            this.lblRazonSocial.Text = "Nro de Orden Salida";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Fecha:";
-            // 
-            // txtRazonSocial
-            // 
-            this.txtRazonSocial.Location = new System.Drawing.Point(122, 68);
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(199, 20);
-            this.txtRazonSocial.TabIndex = 14;
-            // 
-            // lblTotalItems
-            // 
-            this.lblTotalItems.AutoSize = true;
-            this.lblTotalItems.Location = new System.Drawing.Point(71, 412);
-            this.lblTotalItems.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalItems.Name = "lblTotalItems";
-            this.lblTotalItems.Size = new System.Drawing.Size(65, 13);
-            this.lblTotalItems.TabIndex = 48;
-            this.lblTotalItems.Text = "Total Items :";
-            // 
-            // txtTotalItems
-            // 
-            this.txtTotalItems.Location = new System.Drawing.Point(137, 409);
-            this.txtTotalItems.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTotalItems.Name = "txtTotalItems";
-            this.txtTotalItems.Size = new System.Drawing.Size(73, 20);
-            this.txtTotalItems.TabIndex = 49;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Codigo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(122, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 20);
-            this.textBox1.TabIndex = 40;
             // 
             // idItem
             // 
@@ -240,11 +118,113 @@
             this.colObservacion.Name = "colObservacion";
             this.colObservacion.Width = 125;
             // 
+            // grupBoxDatos
+            // 
+            this.grupBoxDatos.Controls.Add(this.dateTimePicker1);
+            this.grupBoxDatos.Controls.Add(this.textBox2);
+            this.grupBoxDatos.Controls.Add(this.label2);
+            this.grupBoxDatos.Controls.Add(this.btnAgregar);
+            this.grupBoxDatos.Controls.Add(this.btnCancelar);
+            this.grupBoxDatos.Controls.Add(this.lblRazonSocial);
+            this.grupBoxDatos.Controls.Add(this.label3);
+            this.grupBoxDatos.Controls.Add(this.txtRazonSocial);
+            this.grupBoxDatos.Location = new System.Drawing.Point(71, 434);
+            this.grupBoxDatos.Name = "grupBoxDatos";
+            this.grupBoxDatos.Size = new System.Drawing.Size(633, 150);
+            this.grupBoxDatos.TabIndex = 50;
+            this.grupBoxDatos.TabStop = false;
+            this.grupBoxDatos.Text = "Datos Orden de Salida";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(121, 68);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 38;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(121, 99);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(199, 20);
+            this.textBox2.TabIndex = 37;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 13);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Observaciones:";
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(523, 52);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 5;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(523, 90);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 4;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // lblRazonSocial
+            // 
+            this.lblRazonSocial.AutoSize = true;
+            this.lblRazonSocial.Location = new System.Drawing.Point(6, 41);
+            this.lblRazonSocial.Name = "lblRazonSocial";
+            this.lblRazonSocial.Size = new System.Drawing.Size(103, 13);
+            this.lblRazonSocial.TabIndex = 9;
+            this.lblRazonSocial.Text = "Nro de Orden Salida";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Fecha:";
+            // 
+            // txtRazonSocial
+            // 
+            this.txtRazonSocial.Location = new System.Drawing.Point(122, 38);
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Size = new System.Drawing.Size(199, 20);
+            this.txtRazonSocial.TabIndex = 14;
+            // 
+            // lblTotalItems
+            // 
+            this.lblTotalItems.AutoSize = true;
+            this.lblTotalItems.Location = new System.Drawing.Point(71, 412);
+            this.lblTotalItems.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalItems.Name = "lblTotalItems";
+            this.lblTotalItems.Size = new System.Drawing.Size(65, 13);
+            this.lblTotalItems.TabIndex = 48;
+            this.lblTotalItems.Text = "Total Items :";
+            // 
+            // txtTotalItems
+            // 
+            this.txtTotalItems.Location = new System.Drawing.Point(137, 409);
+            this.txtTotalItems.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTotalItems.Name = "txtTotalItems";
+            this.txtTotalItems.Size = new System.Drawing.Size(73, 20);
+            this.txtTotalItems.TabIndex = 49;
+            // 
             // OrdenSalida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(774, 623);
+            this.ClientSize = new System.Drawing.Size(774, 597);
             this.Controls.Add(this.grupBoxDatos);
             this.Controls.Add(this.lblTotalItems);
             this.Controls.Add(this.txtTotalItems);
@@ -275,8 +255,6 @@
         private System.Windows.Forms.TextBox txtRazonSocial;
         private System.Windows.Forms.Label lblTotalItems;
         private System.Windows.Forms.TextBox txtTotalItems;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colItem;

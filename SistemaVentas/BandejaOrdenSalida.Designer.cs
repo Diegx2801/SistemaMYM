@@ -45,7 +45,6 @@
             this.btnImprimir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.colNpedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
@@ -68,7 +67,6 @@
             this.dgvRequerimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRequerimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNpedido,
-            this.Codigo,
             this.colFecha,
             this.colEstado});
             this.dgvRequerimientos.Location = new System.Drawing.Point(12, 173);
@@ -231,11 +229,6 @@
             this.colNpedido.Name = "colNpedido";
             this.colNpedido.Width = 80;
             // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Código";
-            this.Codigo.Name = "Codigo";
-            // 
             // colFecha
             // 
             this.colFecha.HeaderText = "Fecha";
@@ -291,7 +284,6 @@
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNpedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
     }

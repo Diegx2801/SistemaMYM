@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvItems = new System.Windows.Forms.DataGridView();
-            this.idItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTotalItems = new System.Windows.Forms.TextBox();
             this.lblTotalItems = new System.Windows.Forms.Label();
@@ -50,6 +45,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.idItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.grupBoxDatos.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvItems.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idItem,
+            this.Codigo,
             this.colItem,
             this.colUnidad,
             this.colCantidad,
@@ -70,39 +72,6 @@
             this.dgvItems.RowTemplate.Height = 24;
             this.dgvItems.Size = new System.Drawing.Size(633, 344);
             this.dgvItems.TabIndex = 40;
-            // 
-            // idItem
-            // 
-            this.idItem.HeaderText = "ID";
-            this.idItem.Name = "idItem";
-            // 
-            // colItem
-            // 
-            this.colItem.HeaderText = "Item";
-            this.colItem.MinimumWidth = 6;
-            this.colItem.Name = "colItem";
-            this.colItem.Width = 125;
-            // 
-            // colUnidad
-            // 
-            this.colUnidad.HeaderText = "Unidad Medida";
-            this.colUnidad.MinimumWidth = 6;
-            this.colUnidad.Name = "colUnidad";
-            this.colUnidad.Width = 70;
-            // 
-            // colCantidad
-            // 
-            this.colCantidad.HeaderText = "Cantidad";
-            this.colCantidad.MinimumWidth = 6;
-            this.colCantidad.Name = "colCantidad";
-            this.colCantidad.Width = 70;
-            // 
-            // colObservacion
-            // 
-            this.colObservacion.HeaderText = "Observación";
-            this.colObservacion.MinimumWidth = 6;
-            this.colObservacion.Name = "colObservacion";
-            this.colObservacion.Width = 125;
             // 
             // label1
             // 
@@ -250,16 +219,54 @@
             this.grupBoxDatos.Controls.Add(this.lblCorreo);
             this.grupBoxDatos.Location = new System.Drawing.Point(67, 423);
             this.grupBoxDatos.Name = "grupBoxDatos";
-            this.grupBoxDatos.Size = new System.Drawing.Size(633, 280);
+            this.grupBoxDatos.Size = new System.Drawing.Size(633, 247);
             this.grupBoxDatos.TabIndex = 43;
             this.grupBoxDatos.TabStop = false;
             this.grupBoxDatos.Text = "Datos Orden de Compra";
+            // 
+            // idItem
+            // 
+            this.idItem.HeaderText = "ID";
+            this.idItem.Name = "idItem";
+            // 
+            // Codigo
+            // 
+            this.Codigo.HeaderText = "Código";
+            this.Codigo.Name = "Codigo";
+            // 
+            // colItem
+            // 
+            this.colItem.HeaderText = "Item";
+            this.colItem.MinimumWidth = 6;
+            this.colItem.Name = "colItem";
+            this.colItem.Width = 125;
+            // 
+            // colUnidad
+            // 
+            this.colUnidad.HeaderText = "Unidad Medida";
+            this.colUnidad.MinimumWidth = 6;
+            this.colUnidad.Name = "colUnidad";
+            this.colUnidad.Width = 70;
+            // 
+            // colCantidad
+            // 
+            this.colCantidad.HeaderText = "Cantidad";
+            this.colCantidad.MinimumWidth = 6;
+            this.colCantidad.Name = "colCantidad";
+            this.colCantidad.Width = 70;
+            // 
+            // colObservacion
+            // 
+            this.colObservacion.HeaderText = "Observación";
+            this.colObservacion.MinimumWidth = 6;
+            this.colObservacion.Name = "colObservacion";
+            this.colObservacion.Width = 125;
             // 
             // OrdenIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 718);
+            this.ClientSize = new System.Drawing.Size(767, 679);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grupBoxDatos);
             this.Controls.Add(this.lblTotalItems);
@@ -277,11 +284,6 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dgvItems;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colUnidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colObservacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTotalItems;
         private System.Windows.Forms.Label lblTotalItems;
@@ -298,5 +300,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.GroupBox grupBoxDatos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colUnidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colObservacion;
     }
 }
