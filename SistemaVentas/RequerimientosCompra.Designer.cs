@@ -266,7 +266,7 @@
             // 
             // btnInicio
             // 
-            this.btnInicio.Location = new System.Drawing.Point(1009, 539);
+            this.btnInicio.Location = new System.Drawing.Point(988, 539);
             this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(56, 19);
@@ -329,7 +329,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 569);
+            this.ClientSize = new System.Drawing.Size(1094, 569);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnProv);
             this.Controls.Add(this.btnAnular);

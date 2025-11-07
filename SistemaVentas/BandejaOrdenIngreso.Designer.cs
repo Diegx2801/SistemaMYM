@@ -46,10 +46,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnInicio = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
             this.grpFiltros.SuspendLayout();
             this.SuspendLayout();
@@ -231,16 +231,6 @@
             this.btnInicio.Text = "INICIO";
             this.btnInicio.UseVisualStyleBackColor = true;
             // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(839, 170);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(91, 36);
-            this.btnNuevo.TabIndex = 46;
-            this.btnNuevo.Text = "Nueva Orden de Ingreso";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Location = new System.Drawing.Point(839, 228);
@@ -265,22 +255,32 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(369, 13);
+            this.label1.Location = new System.Drawing.Point(360, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(262, 26);
             this.label1.TabIndex = 44;
             this.label1.Text = "Bandeja Orden de Ingreso";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(839, 170);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 38);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "Anular";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // BandejaOrdenIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(961, 574);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvRequerimientos);
             this.Controls.Add(this.grpFiltros);
             this.Controls.Add(this.btnInicio);
-            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label1);
@@ -314,9 +314,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnImprimir;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

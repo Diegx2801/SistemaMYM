@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BandejaOrdenIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BandejaOrdenIngreso.Designer.cs">
+      <DependentUpon>BandejaOrdenIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BandejaPedidoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BandejaPedidoCompra.Designer.cs">
+      <DependentUpon>BandejaPedidoCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="BandejaRequerimientosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,12 +69,6 @@
     </Compile>
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MantenedorDistribuidor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MantenedorDistribuidor.Designer.cs">
-      <DependentUpon>MantenedorDistribuidor.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenedorFormaDePago.cs">
       <SubType>Form</SubType>
@@ -100,11 +106,23 @@
     <Compile Include="MantenedorTipoMaterial.Designer.cs">
       <DependentUpon>MantenedorTipoMaterial.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdenIngresoForm.cs">
+    <Compile Include="BandejaOrdenDeCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrdenIngresoForm.Designer.cs">
-      <DependentUpon>OrdenIngresoForm.cs</DependentUpon>
+    <Compile Include="BandejaOrdenDeCompra.Designer.cs">
+      <DependentUpon>BandejaOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenIngreso.Designer.cs">
+      <DependentUpon>OrdenIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoCompra.Designer.cs">
+      <DependentUpon>PedidoCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,15 +132,24 @@
     <Compile Include="RequerimientoEditForm.Designer.cs">
       <DependentUpon>RequerimientoEditForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RequerimientosCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequerimientosCompra.Designer.cs">
+      <DependentUpon>RequerimientosCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sesion.cs" />
+    <EmbeddedResource Include="BandejaOrdenIngreso.resx">
+      <DependentUpon>BandejaOrdenIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BandejaPedidoCompra.resx">
+      <DependentUpon>BandejaPedidoCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BandejaRequerimientosForm.resx">
       <DependentUpon>BandejaRequerimientosForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorDistribuidor.resx">
-      <DependentUpon>MantenedorDistribuidor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorFormaDePago.resx">
       <DependentUpon>MantenedorFormaDePago.cs</DependentUpon>
@@ -139,8 +166,17 @@
     <EmbeddedResource Include="MantenedorObra.resx">
       <DependentUpon>MantenedorObra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdenIngresoForm.resx">
-      <DependentUpon>OrdenIngresoForm.cs</DependentUpon>
+    <EmbeddedResource Include="MantenedorTipoMaterial.resx">
+      <DependentUpon>MantenedorTipoMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BandejaOrdenDeCompra.resx">
+      <DependentUpon>BandejaOrdenDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenIngreso.resx">
+      <DependentUpon>OrdenIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoCompra.resx">
+      <DependentUpon>PedidoCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -153,6 +189,9 @@
     </Compile>
     <EmbeddedResource Include="RequerimientoEditForm.resx">
       <DependentUpon>RequerimientoEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequerimientosCompra.resx">
+      <DependentUpon>RequerimientosCompra.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

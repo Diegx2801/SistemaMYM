@@ -49,6 +49,7 @@
             this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.grupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.SuspendLayout();
@@ -67,7 +68,7 @@
             this.grupBoxDatos.Controls.Add(this.label3);
             this.grupBoxDatos.Controls.Add(this.txtRazonSocial);
             this.grupBoxDatos.Controls.Add(this.lblCorreo);
-            this.grupBoxDatos.Location = new System.Drawing.Point(67, 392);
+            this.grupBoxDatos.Location = new System.Drawing.Point(67, 423);
             this.grupBoxDatos.Name = "grupBoxDatos";
             this.grupBoxDatos.Size = new System.Drawing.Size(633, 280);
             this.grupBoxDatos.TabIndex = 43;
@@ -178,7 +179,7 @@
             // lblTotalItems
             // 
             this.lblTotalItems.AutoSize = true;
-            this.lblTotalItems.Location = new System.Drawing.Point(67, 370);
+            this.lblTotalItems.Location = new System.Drawing.Point(67, 401);
             this.lblTotalItems.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalItems.Name = "lblTotalItems";
             this.lblTotalItems.Size = new System.Drawing.Size(65, 13);
@@ -187,7 +188,7 @@
             // 
             // txtTotalItems
             // 
-            this.txtTotalItems.Location = new System.Drawing.Point(133, 367);
+            this.txtTotalItems.Location = new System.Drawing.Point(133, 398);
             this.txtTotalItems.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalItems.Name = "txtTotalItems";
             this.txtTotalItems.Size = new System.Drawing.Size(73, 20);
@@ -202,7 +203,7 @@
             this.colUnidad,
             this.colCantidad,
             this.colObservacion});
-            this.dgvItems.Location = new System.Drawing.Point(67, 18);
+            this.dgvItems.Location = new System.Drawing.Point(67, 49);
             this.dgvItems.Margin = new System.Windows.Forms.Padding(2);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.RowHeadersWidth = 51;
@@ -243,11 +244,23 @@
             this.colObservacion.Name = "colObservacion";
             this.colObservacion.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(242, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(272, 26);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Registrar Orden de Ingreso";
+            // 
             // OrdenIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 691);
+            this.ClientSize = new System.Drawing.Size(767, 718);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.grupBoxDatos);
             this.Controls.Add(this.lblTotalItems);
             this.Controls.Add(this.txtTotalItems);
@@ -285,5 +298,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colUnidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colObservacion;
+        private System.Windows.Forms.Label label1;
     }
 }
