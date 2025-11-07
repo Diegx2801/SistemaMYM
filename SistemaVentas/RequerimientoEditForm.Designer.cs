@@ -30,38 +30,38 @@
         {
             this.lblTitulo = new System.Windows.Forms.Label();
             this.grpDatos = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.txtSolicitante = new System.Windows.Forms.TextBox();
             this.lblObservacion = new System.Windows.Forms.Label();
             this.lblSolicitante = new System.Windows.Forms.Label();
             this.grpItems = new System.Windows.Forms.GroupBox();
-            this.txtTotalItems = new System.Windows.Forms.TextBox();
-            this.lblTotalItems = new System.Windows.Forms.Label();
-            this.dgvItems = new System.Windows.Forms.DataGridView();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnAgregarItem = new System.Windows.Forms.Button();
             this.txtBuscarMaterial = new System.Windows.Forms.TextBox();
             this.lblBuscarMaterial = new System.Windows.Forms.Label();
+            this.txtTotalItems = new System.Windows.Forms.TextBox();
+            this.lblTotalItems = new System.Windows.Forms.Label();
+            this.dgvItems = new System.Windows.Forms.DataGridView();
+            this.idItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlAcciones = new System.Windows.Forms.Panel();
             this.btnCierra = new System.Windows.Forms.Button();
             this.btnAnular = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.idItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colItem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colUnidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpDatos.SuspendLayout();
             this.grpItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
@@ -72,12 +72,12 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(358, 9);
+            this.lblTitulo.Location = new System.Drawing.Point(302, 19);
             this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(304, 26);
+            this.lblTitulo.Size = new System.Drawing.Size(418, 26);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "REQUERIMIENTO DE COMPRA";
+            this.lblTitulo.Text = "REGISTRAR REQUERIMIENTO DE COMPRA";
             // 
             // grpDatos
             // 
@@ -90,18 +90,55 @@
             this.grpDatos.Controls.Add(this.lblObservacion);
             this.grpDatos.Controls.Add(this.lblSolicitante);
             this.grpDatos.Location = new System.Drawing.Point(18, 350);
-            this.grpDatos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpDatos.Margin = new System.Windows.Forms.Padding(2);
             this.grpDatos.Name = "grpDatos";
-            this.grpDatos.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpDatos.Padding = new System.Windows.Forms.Padding(2);
             this.grpDatos.Size = new System.Drawing.Size(450, 245);
             this.grpDatos.TabIndex = 8;
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos de Requerimiento";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(76, 146);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(242, 19);
+            this.textBox2.TabIndex = 11;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(76, 109);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(114, 21);
+            this.comboBox1.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 109);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Prioridad:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(27, 71);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Obra:";
+            // 
             // txtObservacion
             // 
             this.txtObservacion.Location = new System.Drawing.Point(76, 68);
-            this.txtObservacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtObservacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtObservacion.Name = "txtObservacion";
             this.txtObservacion.Size = new System.Drawing.Size(242, 20);
             this.txtObservacion.TabIndex = 7;
@@ -110,7 +147,7 @@
             // txtSolicitante
             // 
             this.txtSolicitante.Location = new System.Drawing.Point(76, 32);
-            this.txtSolicitante.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSolicitante.Margin = new System.Windows.Forms.Padding(2);
             this.txtSolicitante.Name = "txtSolicitante";
             this.txtSolicitante.Size = new System.Drawing.Size(242, 20);
             this.txtSolicitante.TabIndex = 5;
@@ -147,18 +184,100 @@
             this.grpItems.Controls.Add(this.txtBuscarMaterial);
             this.grpItems.Controls.Add(this.lblBuscarMaterial);
             this.grpItems.Location = new System.Drawing.Point(18, 72);
-            this.grpItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpItems.Margin = new System.Windows.Forms.Padding(2);
             this.grpItems.Name = "grpItems";
-            this.grpItems.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpItems.Padding = new System.Windows.Forms.Padding(2);
             this.grpItems.Size = new System.Drawing.Size(450, 259);
             this.grpItems.TabIndex = 9;
             this.grpItems.TabStop = false;
             this.grpItems.Text = "Datos del Material";
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(83, 154);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(235, 20);
+            this.textBox4.TabIndex = 10;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 157);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Observación:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(113, 111);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(205, 20);
+            this.textBox3.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 114);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Unidad de Medida:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(64, 73);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(77, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 76);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Cantidad:";
+            // 
+            // btnAgregarItem
+            // 
+            this.btnAgregarItem.Location = new System.Drawing.Point(359, 215);
+            this.btnAgregarItem.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregarItem.Name = "btnAgregarItem";
+            this.btnAgregarItem.Size = new System.Drawing.Size(58, 28);
+            this.btnAgregarItem.TabIndex = 4;
+            this.btnAgregarItem.Text = "Agregar";
+            this.btnAgregarItem.UseVisualStyleBackColor = true;
+            // 
+            // txtBuscarMaterial
+            // 
+            this.txtBuscarMaterial.Location = new System.Drawing.Point(64, 34);
+            this.txtBuscarMaterial.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBuscarMaterial.Name = "txtBuscarMaterial";
+            this.txtBuscarMaterial.Size = new System.Drawing.Size(254, 20);
+            this.txtBuscarMaterial.TabIndex = 1;
+            // 
+            // lblBuscarMaterial
+            // 
+            this.lblBuscarMaterial.AutoSize = true;
+            this.lblBuscarMaterial.Location = new System.Drawing.Point(13, 37);
+            this.lblBuscarMaterial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBuscarMaterial.Name = "lblBuscarMaterial";
+            this.lblBuscarMaterial.Size = new System.Drawing.Size(47, 13);
+            this.lblBuscarMaterial.TabIndex = 0;
+            this.lblBuscarMaterial.Text = "Material:";
+            // 
             // txtTotalItems
             // 
             this.txtTotalItems.Location = new System.Drawing.Point(552, 505);
-            this.txtTotalItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotalItems.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalItems.Name = "txtTotalItems";
             this.txtTotalItems.Size = new System.Drawing.Size(76, 20);
             this.txtTotalItems.TabIndex = 7;
@@ -183,194 +302,12 @@
             this.colCantidad,
             this.colObservacion});
             this.dgvItems.Location = new System.Drawing.Point(486, 72);
-            this.dgvItems.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvItems.Margin = new System.Windows.Forms.Padding(2);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.RowHeadersWidth = 51;
             this.dgvItems.RowTemplate.Height = 24;
             this.dgvItems.Size = new System.Drawing.Size(499, 423);
             this.dgvItems.TabIndex = 5;
-            // 
-            // btnAgregarItem
-            // 
-            this.btnAgregarItem.Location = new System.Drawing.Point(359, 215);
-            this.btnAgregarItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAgregarItem.Name = "btnAgregarItem";
-            this.btnAgregarItem.Size = new System.Drawing.Size(58, 28);
-            this.btnAgregarItem.TabIndex = 4;
-            this.btnAgregarItem.Text = "Agregar";
-            this.btnAgregarItem.UseVisualStyleBackColor = true;
-            // 
-            // txtBuscarMaterial
-            // 
-            this.txtBuscarMaterial.Location = new System.Drawing.Point(64, 34);
-            this.txtBuscarMaterial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtBuscarMaterial.Name = "txtBuscarMaterial";
-            this.txtBuscarMaterial.Size = new System.Drawing.Size(254, 20);
-            this.txtBuscarMaterial.TabIndex = 1;
-            // 
-            // lblBuscarMaterial
-            // 
-            this.lblBuscarMaterial.AutoSize = true;
-            this.lblBuscarMaterial.Location = new System.Drawing.Point(13, 37);
-            this.lblBuscarMaterial.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblBuscarMaterial.Name = "lblBuscarMaterial";
-            this.lblBuscarMaterial.Size = new System.Drawing.Size(47, 13);
-            this.lblBuscarMaterial.TabIndex = 0;
-            this.lblBuscarMaterial.Text = "Material:";
-            // 
-            // pnlAcciones
-            // 
-            this.pnlAcciones.Controls.Add(this.btnCierra);
-            this.pnlAcciones.Controls.Add(this.btnAnular);
-            this.pnlAcciones.Controls.Add(this.btnInicio);
-            this.pnlAcciones.Controls.Add(this.btnNuevo);
-            this.pnlAcciones.Controls.Add(this.btnCerrar);
-            this.pnlAcciones.Location = new System.Drawing.Point(576, 537);
-            this.pnlAcciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pnlAcciones.Name = "pnlAcciones";
-            this.pnlAcciones.Size = new System.Drawing.Size(217, 58);
-            this.pnlAcciones.TabIndex = 23;
-            // 
-            // btnCierra
-            // 
-            this.btnCierra.Location = new System.Drawing.Point(145, 11);
-            this.btnCierra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnCierra.Name = "btnCierra";
-            this.btnCierra.Size = new System.Drawing.Size(56, 36);
-            this.btnCierra.TabIndex = 22;
-            this.btnCierra.Text = "Cerrar";
-            this.btnCierra.UseVisualStyleBackColor = true;
-            // 
-            // btnAnular
-            // 
-            this.btnAnular.Location = new System.Drawing.Point(30, 241);
-            this.btnAnular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnAnular.Name = "btnAnular";
-            this.btnAnular.Size = new System.Drawing.Size(91, 39);
-            this.btnAnular.TabIndex = 18;
-            this.btnAnular.Text = "Anular";
-            this.btnAnular.UseVisualStyleBackColor = true;
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.Location = new System.Drawing.Point(64, 464);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(56, 19);
-            this.btnInicio.TabIndex = 16;
-            this.btnInicio.Text = "INICIO";
-            this.btnInicio.UseVisualStyleBackColor = true;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(9, 11);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(111, 36);
-            this.btnNuevo.TabIndex = 11;
-            this.btnNuevo.Text = "Añadir Requerimiento";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(30, 300);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(91, 38);
-            this.btnCerrar.TabIndex = 15;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 76);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Cantidad:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(64, 73);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(77, 20);
-            this.textBox1.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 71);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Obra:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 109);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Prioridad:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(76, 109);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(114, 21);
-            this.comboBox1.TabIndex = 10;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(76, 146);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(242, 19);
-            this.textBox2.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 114);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Unidad de Medida:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(113, 111);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 20);
-            this.textBox3.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 157);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Observación:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(83, 154);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(235, 20);
-            this.textBox4.TabIndex = 10;
             // 
             // idItem
             // 
@@ -405,6 +342,69 @@
             this.colObservacion.Name = "colObservacion";
             this.colObservacion.Width = 125;
             // 
+            // pnlAcciones
+            // 
+            this.pnlAcciones.Controls.Add(this.btnCierra);
+            this.pnlAcciones.Controls.Add(this.btnAnular);
+            this.pnlAcciones.Controls.Add(this.btnInicio);
+            this.pnlAcciones.Controls.Add(this.btnNuevo);
+            this.pnlAcciones.Controls.Add(this.btnCerrar);
+            this.pnlAcciones.Location = new System.Drawing.Point(576, 537);
+            this.pnlAcciones.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlAcciones.Name = "pnlAcciones";
+            this.pnlAcciones.Size = new System.Drawing.Size(217, 58);
+            this.pnlAcciones.TabIndex = 23;
+            // 
+            // btnCierra
+            // 
+            this.btnCierra.Location = new System.Drawing.Point(145, 11);
+            this.btnCierra.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCierra.Name = "btnCierra";
+            this.btnCierra.Size = new System.Drawing.Size(56, 36);
+            this.btnCierra.TabIndex = 22;
+            this.btnCierra.Text = "Cerrar";
+            this.btnCierra.UseVisualStyleBackColor = true;
+            // 
+            // btnAnular
+            // 
+            this.btnAnular.Location = new System.Drawing.Point(30, 241);
+            this.btnAnular.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(91, 39);
+            this.btnAnular.TabIndex = 18;
+            this.btnAnular.Text = "Anular";
+            this.btnAnular.UseVisualStyleBackColor = true;
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.Location = new System.Drawing.Point(64, 464);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(56, 19);
+            this.btnInicio.TabIndex = 16;
+            this.btnInicio.Text = "INICIO";
+            this.btnInicio.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(9, 11);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(111, 36);
+            this.btnNuevo.TabIndex = 11;
+            this.btnNuevo.Text = "Añadir Requerimiento";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(30, 300);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(91, 38);
+            this.btnCerrar.TabIndex = 15;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            // 
             // RequerimientoEditForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,9 +417,9 @@
             this.Controls.Add(this.dgvItems);
             this.Controls.Add(this.grpDatos);
             this.Controls.Add(this.lblTitulo);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RequerimientoEditForm";
-            this.Text = "Requerimiento de Compra";
+            this.Text = "Registrar Requerimiento de Compra";
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.grpItems.ResumeLayout(false);

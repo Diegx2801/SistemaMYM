@@ -300,7 +300,7 @@
             this.dgvProv.Location = new System.Drawing.Point(27, 11);
             this.dgvProv.Name = "dgvProv";
             this.dgvProv.RowHeadersWidth = 51;
-            this.dgvProv.Size = new System.Drawing.Size(604, 150);
+            this.dgvProv.Size = new System.Drawing.Size(604, 169);
             this.dgvProv.TabIndex = 27;
             // 
             // colRuc

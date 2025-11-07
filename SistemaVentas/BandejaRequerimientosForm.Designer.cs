@@ -36,6 +36,12 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
+            this.colNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colObra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSolicitante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrioridad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusBar = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.grpFiltros = new System.Windows.Forms.GroupBox();
@@ -50,12 +56,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.colNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colObra = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSolicitante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrioridad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnlAcciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
             this.statusBar.SuspendLayout();
@@ -159,6 +160,48 @@
             this.dgvRequerimientos.RowTemplate.Height = 24;
             this.dgvRequerimientos.Size = new System.Drawing.Size(763, 380);
             this.dgvRequerimientos.TabIndex = 20;
+            // 
+            // colNum
+            // 
+            this.colNum.HeaderText = "N° Req";
+            this.colNum.MinimumWidth = 6;
+            this.colNum.Name = "colNum";
+            this.colNum.Width = 80;
+            // 
+            // colObra
+            // 
+            this.colObra.HeaderText = "Obra";
+            this.colObra.MinimumWidth = 6;
+            this.colObra.Name = "colObra";
+            this.colObra.Width = 160;
+            // 
+            // colFecha
+            // 
+            this.colFecha.HeaderText = "Fecha";
+            this.colFecha.MinimumWidth = 6;
+            this.colFecha.Name = "colFecha";
+            this.colFecha.Width = 135;
+            // 
+            // colSolicitante
+            // 
+            this.colSolicitante.HeaderText = "Solicitante";
+            this.colSolicitante.MinimumWidth = 6;
+            this.colSolicitante.Name = "colSolicitante";
+            this.colSolicitante.Width = 150;
+            // 
+            // colPrioridad
+            // 
+            this.colPrioridad.HeaderText = "Prioridad";
+            this.colPrioridad.MinimumWidth = 6;
+            this.colPrioridad.Name = "colPrioridad";
+            this.colPrioridad.Width = 125;
+            // 
+            // colItems
+            // 
+            this.colItems.HeaderText = "Ítems";
+            this.colItems.MinimumWidth = 6;
+            this.colItems.Name = "colItems";
+            this.colItems.Width = 60;
             // 
             // statusBar
             // 
@@ -302,53 +345,23 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Buscar por N° Req";
             // 
-            // colNum
+            // label4
             // 
-            this.colNum.HeaderText = "N° Req";
-            this.colNum.MinimumWidth = 6;
-            this.colNum.Name = "colNum";
-            this.colNum.Width = 80;
-            // 
-            // colObra
-            // 
-            this.colObra.HeaderText = "Obra";
-            this.colObra.MinimumWidth = 6;
-            this.colObra.Name = "colObra";
-            this.colObra.Width = 160;
-            // 
-            // colFecha
-            // 
-            this.colFecha.HeaderText = "Fecha";
-            this.colFecha.MinimumWidth = 6;
-            this.colFecha.Name = "colFecha";
-            this.colFecha.Width = 135;
-            // 
-            // colSolicitante
-            // 
-            this.colSolicitante.HeaderText = "Solicitante";
-            this.colSolicitante.MinimumWidth = 6;
-            this.colSolicitante.Name = "colSolicitante";
-            this.colSolicitante.Width = 150;
-            // 
-            // colPrioridad
-            // 
-            this.colPrioridad.HeaderText = "Prioridad";
-            this.colPrioridad.MinimumWidth = 6;
-            this.colPrioridad.Name = "colPrioridad";
-            this.colPrioridad.Width = 125;
-            // 
-            // colItems
-            // 
-            this.colItems.HeaderText = "Ítems";
-            this.colItems.MinimumWidth = 6;
-            this.colItems.Name = "colItems";
-            this.colItems.Width = 60;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(306, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(388, 26);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Bandeja de Requerimientos de Compra";
             // 
             // BandejaRequerimientosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(986, 551);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.grpFiltros);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.pnlAcciones);
@@ -397,5 +410,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colSolicitante;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrioridad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colItems;
+        private System.Windows.Forms.Label label4;
     }
 }

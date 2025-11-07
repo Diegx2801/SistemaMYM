@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grpFiltros = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblObra = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
@@ -39,22 +41,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
-            this.btnProv = new System.Windows.Forms.Button();
-            this.btnAnular = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnInicio = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnEnviarCompras = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.colNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colObra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSolicitante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colItems = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnProv = new System.Windows.Forms.Button();
+            this.btnAnular = new System.Windows.Forms.Button();
+            this.btnInicio = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnEnviarCompras = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.grpFiltros.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +72,7 @@
             this.grpFiltros.Controls.Add(this.label2);
             this.grpFiltros.Controls.Add(this.label1);
             this.grpFiltros.Controls.Add(this.label3);
-            this.grpFiltros.Location = new System.Drawing.Point(25, 23);
+            this.grpFiltros.Location = new System.Drawing.Point(22, 42);
             this.grpFiltros.Margin = new System.Windows.Forms.Padding(2);
             this.grpFiltros.Name = "grpFiltros";
             this.grpFiltros.Padding = new System.Windows.Forms.Padding(2);
@@ -80,6 +80,22 @@
             this.grpFiltros.TabIndex = 23;
             this.grpFiltros.TabStop = false;
             this.grpFiltros.Text = "Filtros de búsqueda";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(314, 42);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 19;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(171, 41);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 18;
             // 
             // lblObra
             // 
@@ -178,109 +194,13 @@
             this.colSolicitante,
             this.colEstado,
             this.colItems});
-            this.dgvRequerimientos.Location = new System.Drawing.Point(25, 138);
+            this.dgvRequerimientos.Location = new System.Drawing.Point(22, 157);
             this.dgvRequerimientos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRequerimientos.Name = "dgvRequerimientos";
             this.dgvRequerimientos.RowHeadersWidth = 51;
             this.dgvRequerimientos.RowTemplate.Height = 24;
             this.dgvRequerimientos.Size = new System.Drawing.Size(885, 401);
             this.dgvRequerimientos.TabIndex = 22;
-            // 
-            // btnProv
-            // 
-            this.btnProv.Location = new System.Drawing.Point(977, 345);
-            this.btnProv.Margin = new System.Windows.Forms.Padding(2);
-            this.btnProv.Name = "btnProv";
-            this.btnProv.Size = new System.Drawing.Size(91, 25);
-            this.btnProv.TabIndex = 32;
-            this.btnProv.Text = "Agregar Obra";
-            this.btnProv.UseVisualStyleBackColor = true;
-            // 
-            // btnAnular
-            // 
-            this.btnAnular.Location = new System.Drawing.Point(977, 238);
-            this.btnAnular.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAnular.Name = "btnAnular";
-            this.btnAnular.Size = new System.Drawing.Size(91, 39);
-            this.btnAnular.TabIndex = 31;
-            this.btnAnular.Text = "Anular";
-            this.btnAnular.UseVisualStyleBackColor = true;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(977, 85);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(91, 36);
-            this.btnEditar.TabIndex = 30;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // btnInicio
-            // 
-            this.btnInicio.Location = new System.Drawing.Point(1012, 520);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(56, 19);
-            this.btnInicio.TabIndex = 29;
-            this.btnInicio.Text = "INICIO";
-            this.btnInicio.UseVisualStyleBackColor = true;
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Location = new System.Drawing.Point(977, 34);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(91, 36);
-            this.btnNuevo.TabIndex = 25;
-            this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(977, 291);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(91, 38);
-            this.btnCerrar.TabIndex = 28;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            // 
-            // btnEnviarCompras
-            // 
-            this.btnEnviarCompras.Location = new System.Drawing.Point(977, 192);
-            this.btnEnviarCompras.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEnviarCompras.Name = "btnEnviarCompras";
-            this.btnEnviarCompras.Size = new System.Drawing.Size(91, 34);
-            this.btnEnviarCompras.TabIndex = 26;
-            this.btnEnviarCompras.Text = "Enviar a Compras";
-            this.btnEnviarCompras.UseVisualStyleBackColor = true;
-            // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Location = new System.Drawing.Point(977, 138);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(91, 39);
-            this.btnImprimir.TabIndex = 27;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(171, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 18;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(314, 42);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 19;
             // 
             // colNum
             // 
@@ -324,14 +244,95 @@
             this.colItems.Name = "colItems";
             this.colItems.Width = 60;
             // 
+            // btnProv
+            // 
+            this.btnProv.Location = new System.Drawing.Point(974, 315);
+            this.btnProv.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProv.Name = "btnProv";
+            this.btnProv.Size = new System.Drawing.Size(91, 25);
+            this.btnProv.TabIndex = 32;
+            this.btnProv.Text = "Agregar Obra";
+            this.btnProv.UseVisualStyleBackColor = true;
+            // 
+            // btnAnular
+            // 
+            this.btnAnular.Location = new System.Drawing.Point(974, 208);
+            this.btnAnular.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnular.Name = "btnAnular";
+            this.btnAnular.Size = new System.Drawing.Size(91, 39);
+            this.btnAnular.TabIndex = 31;
+            this.btnAnular.Text = "Anular";
+            this.btnAnular.UseVisualStyleBackColor = true;
+            // 
+            // btnInicio
+            // 
+            this.btnInicio.Location = new System.Drawing.Point(1009, 539);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(56, 19);
+            this.btnInicio.TabIndex = 29;
+            this.btnInicio.Text = "INICIO";
+            this.btnInicio.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(974, 53);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(91, 36);
+            this.btnNuevo.TabIndex = 25;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Location = new System.Drawing.Point(974, 261);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(91, 38);
+            this.btnCerrar.TabIndex = 28;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            // 
+            // btnEnviarCompras
+            // 
+            this.btnEnviarCompras.Location = new System.Drawing.Point(974, 162);
+            this.btnEnviarCompras.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEnviarCompras.Name = "btnEnviarCompras";
+            this.btnEnviarCompras.Size = new System.Drawing.Size(91, 34);
+            this.btnEnviarCompras.TabIndex = 26;
+            this.btnEnviarCompras.Text = "Enviar a Compras";
+            this.btnEnviarCompras.UseVisualStyleBackColor = true;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Location = new System.Drawing.Point(974, 108);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(91, 39);
+            this.btnImprimir.TabIndex = 27;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(368, 14);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(388, 26);
+            this.label4.TabIndex = 33;
+            this.label4.Text = "Bandeja de Requerimiento de Compras";
+            // 
             // RequerimientosCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 569);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnProv);
             this.Controls.Add(this.btnAnular);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnInicio);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnCerrar);
@@ -340,11 +341,12 @@
             this.Controls.Add(this.grpFiltros);
             this.Controls.Add(this.dgvRequerimientos);
             this.Name = "RequerimientosCompra";
-            this.Text = "RequerimientosCompra";
+            this.Text = "Bandeja de Requerimientos de Compras";
             this.grpFiltros.ResumeLayout(false);
             this.grpFiltros.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -363,7 +365,6 @@
         private System.Windows.Forms.DataGridView dgvRequerimientos;
         private System.Windows.Forms.Button btnProv;
         private System.Windows.Forms.Button btnAnular;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnInicio;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCerrar;
@@ -377,5 +378,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colSolicitante;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
         private System.Windows.Forms.DataGridViewTextBoxColumn colItems;
+        private System.Windows.Forms.Label label4;
     }
 }

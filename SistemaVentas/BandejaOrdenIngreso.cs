@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace SistemaVentas
 {
-    public partial class BandejaOrdenDeCompra : Form
+    public partial class BandejaOrdenIngreso : Form
     {
-        public BandejaOrdenDeCompra()
+        public BandejaOrdenIngreso()
         {
             InitializeComponent();
-        }
-
-        private void btnBuscarPc_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

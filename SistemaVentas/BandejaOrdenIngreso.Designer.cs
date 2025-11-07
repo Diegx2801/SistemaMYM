@@ -1,6 +1,6 @@
 ﻿namespace SistemaVentas
 {
-    partial class BandejaOrdenDeCompra
+    partial class BandejaOrdenIngreso
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnInicio = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnImprimir = new System.Windows.Forms.Button();
+            this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
+            this.colNpedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpFiltros = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,66 +45,57 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
-            this.colNpedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colProveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grpFiltros.SuspendLayout();
+            this.btnInicio = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
+            this.grpFiltros.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // dgvRequerimientos
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(294, 19);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 26);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Validación de Pedido de Compra";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.dgvRequerimientos.AllowUserToDeleteRows = false;
+            this.dgvRequerimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRequerimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNpedido,
+            this.colFecha,
+            this.colProveedor,
+            this.colEstado});
+            this.dgvRequerimientos.Location = new System.Drawing.Point(31, 170);
+            this.dgvRequerimientos.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvRequerimientos.Name = "dgvRequerimientos";
+            this.dgvRequerimientos.RowHeadersWidth = 51;
+            this.dgvRequerimientos.RowTemplate.Height = 24;
+            this.dgvRequerimientos.Size = new System.Drawing.Size(776, 380);
+            this.dgvRequerimientos.TabIndex = 45;
             // 
-            // btnInicio
+            // colNpedido
             // 
-            this.btnInicio.Location = new System.Drawing.Point(834, 539);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(56, 19);
-            this.btnInicio.TabIndex = 39;
-            this.btnInicio.Text = "INICIO";
-            this.btnInicio.UseVisualStyleBackColor = true;
+            this.colNpedido.HeaderText = "N° Pedido";
+            this.colNpedido.MinimumWidth = 6;
+            this.colNpedido.Name = "colNpedido";
+            this.colNpedido.Width = 80;
             // 
-            // btnNuevo
+            // colFecha
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(819, 166);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(91, 36);
-            this.btnNuevo.TabIndex = 35;
-            this.btnNuevo.Text = "Nueva Orden de Ingreso";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.colFecha.HeaderText = "Fecha";
+            this.colFecha.MinimumWidth = 6;
+            this.colFecha.Name = "colFecha";
+            this.colFecha.Width = 135;
             // 
-            // btnCerrar
+            // colProveedor
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(819, 224);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(91, 38);
-            this.btnCerrar.TabIndex = 38;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.colProveedor.HeaderText = "Proveedor";
+            this.colProveedor.Name = "colProveedor";
             // 
-            // btnImprimir
+            // colEstado
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(819, 286);
-            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(91, 39);
-            this.btnImprimir.TabIndex = 37;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.colEstado.HeaderText = "Estado";
+            this.colEstado.MinimumWidth = 6;
+            this.colEstado.Name = "colEstado";
+            this.colEstado.Width = 125;
             // 
             // grpFiltros
             // 
@@ -119,12 +110,12 @@
             this.grpFiltros.Controls.Add(this.label2);
             this.grpFiltros.Controls.Add(this.label3);
             this.grpFiltros.Controls.Add(this.label5);
-            this.grpFiltros.Location = new System.Drawing.Point(11, 57);
+            this.grpFiltros.Location = new System.Drawing.Point(31, 61);
             this.grpFiltros.Margin = new System.Windows.Forms.Padding(2);
             this.grpFiltros.Name = "grpFiltros";
             this.grpFiltros.Padding = new System.Windows.Forms.Padding(2);
             this.grpFiltros.Size = new System.Drawing.Size(776, 88);
-            this.grpFiltros.TabIndex = 43;
+            this.grpFiltros.TabIndex = 50;
             this.grpFiltros.TabStop = false;
             this.grpFiltros.Text = "Filtros de búsqueda";
             // 
@@ -230,54 +221,62 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Buscar por N° Pedido";
             // 
-            // dgvRequerimientos
+            // btnInicio
             // 
-            this.dgvRequerimientos.AllowUserToDeleteRows = false;
-            this.dgvRequerimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRequerimientos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNpedido,
-            this.colFecha,
-            this.colProveedor,
-            this.colEstado});
-            this.dgvRequerimientos.Location = new System.Drawing.Point(11, 166);
-            this.dgvRequerimientos.Margin = new System.Windows.Forms.Padding(2);
-            this.dgvRequerimientos.Name = "dgvRequerimientos";
-            this.dgvRequerimientos.RowHeadersWidth = 51;
-            this.dgvRequerimientos.RowTemplate.Height = 24;
-            this.dgvRequerimientos.Size = new System.Drawing.Size(776, 380);
-            this.dgvRequerimientos.TabIndex = 26;
+            this.btnInicio.Location = new System.Drawing.Point(854, 543);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInicio.Name = "btnInicio";
+            this.btnInicio.Size = new System.Drawing.Size(56, 19);
+            this.btnInicio.TabIndex = 49;
+            this.btnInicio.Text = "INICIO";
+            this.btnInicio.UseVisualStyleBackColor = true;
             // 
-            // colNpedido
+            // btnNuevo
             // 
-            this.colNpedido.HeaderText = "N° Pedido";
-            this.colNpedido.MinimumWidth = 6;
-            this.colNpedido.Name = "colNpedido";
-            this.colNpedido.Width = 80;
+            this.btnNuevo.Location = new System.Drawing.Point(839, 170);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(91, 36);
+            this.btnNuevo.TabIndex = 46;
+            this.btnNuevo.Text = "Nueva Orden de Ingreso";
+            this.btnNuevo.UseVisualStyleBackColor = true;
             // 
-            // colFecha
+            // btnCerrar
             // 
-            this.colFecha.HeaderText = "Fecha";
-            this.colFecha.MinimumWidth = 6;
-            this.colFecha.Name = "colFecha";
-            this.colFecha.Width = 135;
+            this.btnCerrar.Location = new System.Drawing.Point(839, 228);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(91, 38);
+            this.btnCerrar.TabIndex = 48;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
             // 
-            // colProveedor
+            // btnImprimir
             // 
-            this.colProveedor.HeaderText = "Proveedor";
-            this.colProveedor.Name = "colProveedor";
+            this.btnImprimir.Location = new System.Drawing.Point(839, 290);
+            this.btnImprimir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(91, 39);
+            this.btnImprimir.TabIndex = 47;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
             // 
-            // colEstado
+            // label1
             // 
-            this.colEstado.HeaderText = "Estado";
-            this.colEstado.MinimumWidth = 6;
-            this.colEstado.Name = "colEstado";
-            this.colEstado.Width = 125;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(369, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(262, 26);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Bandeja Orden de Ingreso";
             // 
-            // BandejaOrdenDeCompra
+            // BandejaOrdenIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(928, 605);
+            this.ClientSize = new System.Drawing.Size(961, 574);
             this.Controls.Add(this.dgvRequerimientos);
             this.Controls.Add(this.grpFiltros);
             this.Controls.Add(this.btnInicio);
@@ -285,23 +284,23 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "BandejaOrdenDeCompra";
-            this.Text = "Bandeja Orden de Compra";
+            this.Name = "BandejaOrdenIngreso";
+            this.Text = "BandejaOrdenIngreso";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).EndInit();
             this.grpFiltros.ResumeLayout(false);
             this.grpFiltros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnInicio;
-        private System.Windows.Forms.Button btnNuevo;
-        private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnImprimir;
+
+        private System.Windows.Forms.DataGridView dgvRequerimientos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNpedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colProveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
         private System.Windows.Forms.GroupBox grpFiltros;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label4;
@@ -314,10 +313,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dgvRequerimientos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNpedido;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colProveedor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEstado;
+        private System.Windows.Forms.Button btnInicio;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Label label1;
     }
 }

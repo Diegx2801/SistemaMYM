@@ -31,9 +31,7 @@
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.dtpFechaRegistro = new System.Windows.Forms.DateTimePicker();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.lblFechaRegistro = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
@@ -58,9 +56,7 @@
             // 
             this.grupBoxDatos.Controls.Add(this.lblTelefono);
             this.grupBoxDatos.Controls.Add(this.btnAgregar);
-            this.grupBoxDatos.Controls.Add(this.dtpFechaRegistro);
             this.grupBoxDatos.Controls.Add(this.btnModificar);
-            this.grupBoxDatos.Controls.Add(this.lblFechaRegistro);
             this.grupBoxDatos.Controls.Add(this.btnCancelar);
             this.grupBoxDatos.Controls.Add(this.label1);
             this.grupBoxDatos.Controls.Add(this.txtDescripcion);
@@ -93,13 +89,6 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // dtpFechaRegistro
-            // 
-            this.dtpFechaRegistro.Location = new System.Drawing.Point(183, 191);
-            this.dtpFechaRegistro.Name = "dtpFechaRegistro";
-            this.dtpFechaRegistro.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaRegistro.TabIndex = 19;
-            // 
             // btnModificar
             // 
             this.btnModificar.Location = new System.Drawing.Point(475, 100);
@@ -108,15 +97,6 @@
             this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
-            // 
-            // lblFechaRegistro
-            // 
-            this.lblFechaRegistro.AutoSize = true;
-            this.lblFechaRegistro.Location = new System.Drawing.Point(180, 172);
-            this.lblFechaRegistro.Name = "lblFechaRegistro";
-            this.lblFechaRegistro.Size = new System.Drawing.Size(94, 13);
-            this.lblFechaRegistro.TabIndex = 18;
-            this.lblFechaRegistro.Text = "Fecha de Registro";
             // 
             // btnCancelar
             // 
@@ -178,7 +158,7 @@
             // cbkEstadoFormaPago
             // 
             this.cbkEstadoFormaPago.AutoSize = true;
-            this.cbkEstadoFormaPago.Location = new System.Drawing.Point(17, 169);
+            this.cbkEstadoFormaPago.Location = new System.Drawing.Point(17, 167);
             this.cbkEstadoFormaPago.Name = "cbkEstadoFormaPago";
             this.cbkEstadoFormaPago.Size = new System.Drawing.Size(130, 17);
             this.cbkEstadoFormaPago.TabIndex = 13;
@@ -276,9 +256,7 @@
         private System.Windows.Forms.GroupBox grupBoxDatos;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DateTimePicker dtpFechaRegistro;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Label lblFechaRegistro;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDescripcion;

@@ -37,6 +37,7 @@
             this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -48,7 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtRazonSocial = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.grupBoxDatos.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +57,7 @@
             // lblTotalItems
             // 
             this.lblTotalItems.AutoSize = true;
-            this.lblTotalItems.Location = new System.Drawing.Point(22, 363);
+            this.lblTotalItems.Location = new System.Drawing.Point(24, 417);
             this.lblTotalItems.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalItems.Name = "lblTotalItems";
             this.lblTotalItems.Size = new System.Drawing.Size(65, 13);
@@ -65,7 +66,7 @@
             // 
             // txtTotalItems
             // 
-            this.txtTotalItems.Location = new System.Drawing.Point(88, 360);
+            this.txtTotalItems.Location = new System.Drawing.Point(90, 414);
             this.txtTotalItems.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalItems.Name = "txtTotalItems";
             this.txtTotalItems.Size = new System.Drawing.Size(73, 20);
@@ -80,7 +81,7 @@
             this.colUnidad,
             this.colCantidad,
             this.colObservacion});
-            this.dgvItems.Location = new System.Drawing.Point(22, 11);
+            this.dgvItems.Location = new System.Drawing.Point(24, 65);
             this.dgvItems.Margin = new System.Windows.Forms.Padding(2);
             this.dgvItems.Name = "dgvItems";
             this.dgvItems.RowHeadersWidth = 51;
@@ -135,13 +136,20 @@
             this.grupBoxDatos.Controls.Add(this.label3);
             this.grupBoxDatos.Controls.Add(this.txtRazonSocial);
             this.grupBoxDatos.Controls.Add(this.lblCorreo);
-            this.grupBoxDatos.Location = new System.Drawing.Point(22, 385);
+            this.grupBoxDatos.Location = new System.Drawing.Point(24, 439);
             this.grupBoxDatos.Name = "grupBoxDatos";
-            this.grupBoxDatos.Size = new System.Drawing.Size(633, 280);
+            this.grupBoxDatos.Size = new System.Drawing.Size(633, 252);
             this.grupBoxDatos.TabIndex = 39;
             this.grupBoxDatos.TabStop = false;
             this.grupBoxDatos.Text = "Datos Orden de Compra";
             this.grupBoxDatos.Enter += new System.EventHandler(this.grupBoxDatos_Enter);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(121, 98);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 38;
             // 
             // textBox2
             // 
@@ -237,18 +245,23 @@
             this.lblCorreo.TabIndex = 12;
             this.lblCorreo.Text = "Proveedor:";
             // 
-            // dateTimePicker1
+            // label1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(121, 98);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 38;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(194, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(284, 26);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Registrar Pedido de Compra";
             // 
             // PedidoCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(668, 677);
+            this.ClientSize = new System.Drawing.Size(668, 731);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.grupBoxDatos);
             this.Controls.Add(this.lblTotalItems);
             this.Controls.Add(this.txtTotalItems);
@@ -287,5 +300,6 @@
         private System.Windows.Forms.TextBox txtRazonSocial;
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
     }
 }

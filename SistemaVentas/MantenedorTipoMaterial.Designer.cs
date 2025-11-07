@@ -32,12 +32,10 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblRazonSocial = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtEntidad = new System.Windows.Forms.TextBox();
-            this.cbkEstadoTipoMaterial = new System.Windows.Forms.CheckBox();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -46,6 +44,7 @@
             this.idMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbkEstadoTipoMaterial = new System.Windows.Forms.CheckBox();
             this.grupBoxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarca)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +54,6 @@
             this.grupBoxDatos.Controls.Add(this.btnAgregar);
             this.grupBoxDatos.Controls.Add(this.btnModificar);
             this.grupBoxDatos.Controls.Add(this.btnCancelar);
-            this.grupBoxDatos.Controls.Add(this.label1);
             this.grupBoxDatos.Controls.Add(this.lblRazonSocial);
             this.grupBoxDatos.Controls.Add(this.txtDescripcion);
             this.grupBoxDatos.Controls.Add(this.label3);
@@ -66,6 +64,7 @@
             this.grupBoxDatos.Size = new System.Drawing.Size(494, 225);
             this.grupBoxDatos.TabIndex = 50;
             this.grupBoxDatos.TabStop = false;
+            this.grupBoxDatos.Text = "Datos Tipo Material";
             // 
             // btnAgregar
             // 
@@ -94,23 +93,14 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Datos Tipo Material";
-            // 
             // lblRazonSocial
             // 
             this.lblRazonSocial.AutoSize = true;
             this.lblRazonSocial.Location = new System.Drawing.Point(19, 71);
             this.lblRazonSocial.Name = "lblRazonSocial";
-            this.lblRazonSocial.Size = new System.Drawing.Size(68, 13);
+            this.lblRazonSocial.Size = new System.Drawing.Size(47, 13);
             this.lblRazonSocial.TabIndex = 9;
-            this.lblRazonSocial.Text = "Nombre Tipo";
+            this.lblRazonSocial.Text = "Nombre:";
             // 
             // txtDescripcion
             // 
@@ -125,9 +115,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(19, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Descripción";
+            this.label3.Text = "Descripción:";
             // 
             // txtEntidad
             // 
@@ -135,16 +125,6 @@
             this.txtEntidad.Name = "txtEntidad";
             this.txtEntidad.Size = new System.Drawing.Size(218, 20);
             this.txtEntidad.TabIndex = 14;
-            // 
-            // cbkEstadoTipoMaterial
-            // 
-            this.cbkEstadoTipoMaterial.AutoSize = true;
-            this.cbkEstadoTipoMaterial.Location = new System.Drawing.Point(19, 148);
-            this.cbkEstadoTipoMaterial.Name = "cbkEstadoTipoMaterial";
-            this.cbkEstadoTipoMaterial.Size = new System.Drawing.Size(59, 17);
-            this.cbkEstadoTipoMaterial.TabIndex = 13;
-            this.cbkEstadoTipoMaterial.Text = "Estado";
-            this.cbkEstadoTipoMaterial.UseVisualStyleBackColor = true;
             // 
             // btnDeshabilitar
             // 
@@ -211,6 +191,16 @@
             this.Descripcion.HeaderText = "Descripción";
             this.Descripcion.Name = "Descripcion";
             // 
+            // cbkEstadoTipoMaterial
+            // 
+            this.cbkEstadoTipoMaterial.AutoSize = true;
+            this.cbkEstadoTipoMaterial.Location = new System.Drawing.Point(19, 148);
+            this.cbkEstadoTipoMaterial.Name = "cbkEstadoTipoMaterial";
+            this.cbkEstadoTipoMaterial.Size = new System.Drawing.Size(59, 17);
+            this.cbkEstadoTipoMaterial.TabIndex = 13;
+            this.cbkEstadoTipoMaterial.Text = "Estado";
+            this.cbkEstadoTipoMaterial.UseVisualStyleBackColor = true;
+            // 
             // MantenedorTipoMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,12 +227,10 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblRazonSocial;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtEntidad;
-        private System.Windows.Forms.CheckBox cbkEstadoTipoMaterial;
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnEditar;
@@ -251,5 +239,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn idMarca;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.CheckBox cbkEstadoTipoMaterial;
     }
 }
