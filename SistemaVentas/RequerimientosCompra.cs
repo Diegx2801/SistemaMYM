@@ -16,5 +16,10 @@ namespace SistemaVentas
         {
             InitializeComponent();
         }
+
+        private void grpFiltros_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
